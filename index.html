@@ -1,0 +1,2320 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>2026 東京・石川防災考察行程手冊（12/6 – 12/12）</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paper: '#FAF7F2',
+            card: '#FFFDF9',
+            line: '#E6DFD5',
+            ink: '#363330',
+            muted: '#6E6862',
+            // 7 種和諧多彩莫蘭迪主題色
+            'm-blue': '#6C879E',
+            'm-blue-soft': '#EEF3F7',
+            'm-sage': '#789482',
+            'm-sage-soft': '#EFF4F0',
+            'm-rose': '#B98389',
+            'm-rose-soft': '#F8EFF0',
+            'm-clay': '#C68B6B',
+            'm-clay-soft': '#FAF2EC',
+            'm-purple': '#8E82A1',
+            'm-purple-soft': '#F3F0F7',
+            'm-gold': '#C2A368',
+            'm-gold-soft': '#F9F5EA',
+            'm-teal': '#639194',
+            'm-teal-soft': '#ECF4F4',
+          },
+          fontFamily: {
+            sans: ['"Microsoft JhengHei"', '"微軟正黑體"', '"PingFang TC"', '"Noto Sans TC"', 'sans-serif'],
+          },
+          boxShadow: {
+            'book': '0 4px 20px -2px rgba(54, 51, 48, 0.06), 0 1px 3px rgba(54, 51, 48, 0.04)',
+            'soft': '0 2px 10px rgba(54, 51, 48, 0.05)',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    :root {
+      --bg-paper: #FAF7F2;
+      --bg-card: #FFFDF9;
+      --border-line: #E6DFD5;
+      --text-ink: #363330;
+      --text-muted: #6E6862;
+    }
+
+    html, body {
+      font-family: "Microsoft JhengHei", "微軟正黑體", "PingFang TC", "Noto Sans TC", sans-serif;
+      background-color: var(--bg-paper);
+      color: var(--text-ink);
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    /* 細緻暖米白紙張紋理 */
+    body {
+      background-image:
+        radial-gradient(rgba(198, 139, 107, 0.07) 1px, transparent 0),
+        radial-gradient(rgba(108, 135, 158, 0.06) 1px, transparent 0);
+      background-size: 28px 28px;
+      background-position: 0 0, 14px 14px;
+    }
+
+    /* 隱藏橫向捲軸但維持流暢滑動 */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    /* 頂部七色莫蘭迪色塊裝飾條 */
+    .morandi-seven-ribbon {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      height: 6px;
+      width: 100%;
+    }
+
+    /* 頁面淡入動畫 */
+    .fade-in {
+      animation: fadeIn 0.25s ease-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* 燈箱觸控縮放區域 */
+    .lightbox-stage {
+      touch-action: none;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+  </style>
+</head>
+<body class="min-h-screen pb-24 md:pb-12">
+
+  <!-- ==================== 頂部旅行手冊書籤風格 Header ==================== -->
+  <header class="bg-[#FFFDF9]/95 backdrop-blur-md border-b border-[#E6DFD5] sticky top-0 z-30 shadow-soft">
+    <!-- 七色莫蘭迪色塊裝飾條 -->
+    <div class="morandi-seven-ribbon" aria-hidden="true">
+      <div style="background:#6C879E"></div>
+      <div style="background:#789482"></div>
+      <div style="background:#B98389"></div>
+      <div style="background:#C68B6B"></div>
+      <div style="background:#8E82A1"></div>
+      <div style="background:#C2A368"></div>
+      <div style="background:#639194"></div>
+    </div>
+
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 py-3 sm:py-3.5">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+        <!-- 左側手冊徽章與標題 -->
+        <div class="flex items-center gap-3 min-w-0">
+          <div id="header-icon-box" class="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl flex items-center justify-center shrink-0 border transition-colors duration-300 bg-[#EFF4F0] border-[#789482]/35 text-[#516B5A]">
+            <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"/>
+            </svg>
+          </div>
+          <div class="min-w-0">
+            <div class="flex flex-wrap items-center gap-1.5">
+              <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-bold tracking-wider bg-[#ECF4F4] text-[#456B6E] border border-[#639194]/30">
+                2026/12/06 – 12/12
+              </span>
+              <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-bold bg-[#F9F5EA] text-[#8A6E38] border border-[#C2A368]/30">
+                7天6夜
+              </span>
+              <span class="text-xs text-[#6E6862] hidden sm:inline">災害管理組・日本考察手冊</span>
+            </div>
+            <h1 class="text-base sm:text-xl font-bold text-[#363330] tracking-tight truncate mt-0.5">
+              2026 東京・石川防災考察行程手冊
+            </h1>
+          </div>
+        </div>
+
+        <!-- 桌機版頂部彩色分頁書籤 -->
+        <nav class="hidden md:flex items-center gap-1.5 bg-[#FAF7F2] p-1.5 rounded-2xl border border-[#E6DFD5]" aria-label="主選單">
+          <button onclick="switchTab('itinerary')" data-tab="itinerary" class="nav-btn-desktop px-4 py-2 rounded-xl text-sm font-bold transition-all flex items-center gap-1.5">
+            <span class="w-2 h-2 rounded-full bg-[#789482]"></span>
+            <span>每日行程</span>
+          </button>
+          <button onclick="switchTab('metro')" data-tab="metro" class="nav-btn-desktop px-4 py-2 rounded-xl text-sm font-bold transition-all flex items-center gap-1.5">
+            <span class="w-2 h-2 rounded-full bg-[#6C879E]"></span>
+            <span>地鐵交通</span>
+          </button>
+          <button onclick="switchTab('spots')" data-tab="spots" class="nav-btn-desktop px-4 py-2 rounded-xl text-sm font-bold transition-all flex items-center gap-1.5">
+            <span class="w-2 h-2 rounded-full bg-[#C68B6B]"></span>
+            <span>景點美食</span>
+          </button>
+          <button onclick="switchTab('team')" data-tab="team" class="nav-btn-desktop px-4 py-2 rounded-xl text-sm font-bold transition-all flex items-center gap-1.5">
+            <span class="w-2 h-2 rounded-full bg-[#8E82A1]"></span>
+            <span>團員總覽</span>
+          </button>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== 主內容容器 ==================== -->
+  <main class="max-w-5xl mx-auto px-4 sm:px-6 pt-5 sm:pt-6">
+
+    <!-- ==================== 分頁一：每日行程 ==================== -->
+    <section id="tab-itinerary" class="tab-panel fade-in">
+      <!-- 標題與功能鍵 -->
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4">
+        <div>
+          <h2 class="text-lg sm:text-xl font-bold text-[#363330] flex items-center gap-2">
+            <span class="w-2.5 h-6 rounded-full bg-[#789482] inline-block"></span>
+            每日考察行程表
+          </h2>
+          <p class="text-xs sm:text-sm text-[#6E6862] mt-0.5">每日配屬專屬莫蘭迪色標，支援新增、編輯、刪除與上下調整順序，自動儲存於本機。</p>
+        </div>
+        <div class="flex items-center gap-2">
+          <button onclick="openItineraryModal()" class="flex-1 sm:flex-none inline-flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-xl bg-[#789482] hover:bg-[#657F6E] text-white text-sm font-bold shadow-sm transition active:scale-95">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg>
+            新增行程
+          </button>
+          <button onclick="confirmResetItinerary()" class="inline-flex items-center justify-center gap-1 px-3.5 py-2.5 rounded-xl bg-[#FFFDF9] hover:bg-[#FAF7F2] text-[#6E6862] border border-[#E6DFD5] text-sm font-bold transition active:scale-95" title="重設為原始行程">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99"/></svg>
+            <span class="hidden sm:inline">重設原始行程</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- 7天彩色日期選擇膠囊 -->
+      <div id="day-filter-bar" class="flex items-center gap-2 overflow-x-auto no-scrollbar pb-2 mb-4 -mx-1 px-1">
+        <!-- 由 JS 渲染 -->
+      </div>
+
+      <!-- 當日摘要 banner（單日模式或總覽提示） -->
+      <div id="day-summary-banner" class="mb-5">
+        <!-- 由 JS 渲染 -->
+      </div>
+
+      <!-- 行程時間軸列表 -->
+      <div id="itinerary-list" class="space-y-7">
+        <!-- 由 JS 渲染 -->
+      </div>
+    </section>
+
+    <!-- ==================== 分頁二：地鐵與交通路線圖 ==================== -->
+    <section id="tab-metro" class="tab-panel hidden fade-in">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-5">
+        <div>
+          <h2 class="text-lg sm:text-xl font-bold text-[#363330] flex items-center gap-2">
+            <span class="w-2.5 h-6 rounded-full bg-[#6C879E] inline-block"></span>
+            地鐵與北陸鐵道路線圖
+          </h2>
+          <p class="text-xs sm:text-sm text-[#6E6862] mt-0.5">點擊圖片開啟全螢幕燈箱，支援按鈕縮放、滑鼠滾輪與手機雙指捏合放大。</p>
+        </div>
+        <button onclick="openUploadMapModal()" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-xl bg-[#6C879E] hover:bg-[#5A748A] text-white text-sm font-bold shadow-sm transition active:scale-95">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5m-13.5-9L12 3m0 0l4.5 4.5M12 3v13.5"/></svg>
+          上傳自訂路線圖
+        </button>
+      </div>
+
+      <!-- 兩張內建多彩莫蘭迪高解析 SVG 路線圖 -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 mb-8">
+        <!-- SVG 1：東京考察核心地鐵轉乘圖 -->
+        <div class="bg-[#FFFDF9] rounded-2xl border border-[#E6DFD5] shadow-book overflow-hidden flex flex-col">
+          <div class="px-4 py-3 border-b border-[#E6DFD5] flex items-center justify-between bg-[#EEF3F7]/70">
+            <div>
+              <span class="inline-block px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-[#6C879E] text-white mb-1">東京市區・核心轉乘</span>
+              <h3 class="font-bold text-[#363330] text-sm sm:text-base">東京考察核心地鐵轉乘圖</h3>
+            </div>
+            <button onclick="openLightbox('svg-tokyo', '東京考察核心地鐵轉乘圖')" class="px-3 py-1.5 rounded-xl bg-[#6C879E] text-white text-xs font-bold hover:bg-[#5A748A] transition flex items-center gap-1 shrink-0">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"/></svg>
+              放大查看
+            </button>
+          </div>
+          <div onclick="openLightbox('svg-tokyo', '東京考察核心地鐵轉乘圖')" class="p-3 cursor-zoom-in bg-[#FAF7F2] flex-1 flex items-center justify-center hover:opacity-95 transition">
+            <svg id="svg-tokyo" viewBox="0 0 780 470" class="w-full h-auto rounded-xl bg-[#FFFDF9] border border-[#E6DFD5]" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <pattern id="grid-tokyo" width="38" height="38" patternUnits="userSpaceOnUse">
+                  <path d="M 38 0 L 0 0 0 38" fill="none" stroke="#F1ECE4" stroke-width="1"/>
+                </pattern>
+              </defs>
+              <rect width="780" height="470" fill="url(#grid-tokyo)" rx="12"/>
+              <text x="24" y="34" font-size="16" font-weight="bold" fill="#363330" font-family="Microsoft JhengHei, sans-serif">TOKYO METRO &amp; ACCESS 考察重點路線圖</text>
+              <text x="24" y="54" font-size="11.5" fill="#6E6862" font-family="Microsoft JhengHei, sans-serif">涵蓋 12/6–12/9 四谷住宿、各拜會機構與 12/11–12/12 上野／成田移動</text>
+
+              <!-- 丸之內線（乾燥玫瑰粉 #B98389）：方南町 ↔ 新宿 ↔ 四谷 ↔ 赤坂見附 ↔ 大手町 ↔ 東京 -->
+              <path d="M 75 340 L 165 340 L 245 270 L 345 270 L 445 225 L 535 225" fill="none" stroke="#B98389" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <!-- JR 中央線（暖杏陶土橘 #C68B6B）：新宿 ↔ 四谷 ↔ 東京 -->
+              <path d="M 165 340 L 165 200 L 245 200 L 245 270 M 245 200 L 445 182 L 535 225" fill="none" stroke="#C68B6B" stroke-width="4.5" stroke-dasharray="9,4" stroke-linecap="round" stroke-linejoin="round"/>
+              <!-- 半藏門線（薰衣草霧紫 #8E82A1）：永田町/平河町 ↔ 大手町 ↔ 錦糸町/押上 -->
+              <path d="M 345 298 L 445 252 L 535 252 L 655 205" fill="none" stroke="#8E82A1" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <!-- JR 山手線（鼠尾草綠 #789482）：東京 ↔ 上野 -->
+              <path d="M 535 225 L 535 112" fill="none" stroke="#789482" stroke-width="6.5" stroke-linecap="round"/>
+              <!-- 京成 Skyliner（霧霾藍 #6C879E）：上野 ↔ 成田機場 -->
+              <path d="M 535 112 L 690 112" fill="none" stroke="#6C879E" stroke-width="6.5" stroke-linecap="round"/>
+
+              <!-- 站點：方南町 -->
+              <circle cx="75" cy="340" r="9" fill="#FFFDF9" stroke="#B98389" stroke-width="4"/>
+              <rect x="20" y="356" width="138" height="44" rx="8" fill="#F8EFF0" stroke="#B98389"/>
+              <text x="89" y="374" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#363330">方南町站 (1號出口)</text>
+              <text x="89" y="391" text-anchor="middle" font-size="10.5" fill="#7E4F55">12/7 神田川地下調節池</text>
+
+              <!-- 站點：新宿轉乘 -->
+              <circle cx="165" cy="340" r="7.5" fill="#FFFDF9" stroke="#C68B6B" stroke-width="3.5"/>
+              <text x="172" y="362" font-size="11" font-weight="bold" fill="#8C593E">新宿</text>
+
+              <!-- 站點：四谷 -->
+              <circle cx="245" cy="270" r="11" fill="#FFFDF9" stroke="#363330" stroke-width="4"/>
+              <rect x="135" y="135" width="130" height="48" rx="8" fill="#EEF3F7" stroke="#6C879E"/>
+              <text x="200" y="155" text-anchor="middle" font-size="13" font-weight="bold" fill="#363330">四谷站（據點）</text>
+              <text x="200" y="172" text-anchor="middle" font-size="10.5" fill="#4B6378">12/6–9 京阪東京四谷</text>
+              <line x1="215" y1="183" x2="240" y2="258" stroke="#6C879E" stroke-width="1.5" stroke-dasharray="3,3"/>
+
+              <!-- 站點：永田町 / 平河町 / 赤坂見附 -->
+              <circle cx="345" cy="284" r="10.5" fill="#FFFDF9" stroke="#8E82A1" stroke-width="4"/>
+              <rect x="252" y="320" width="188" height="60" rx="8" fill="#F3F0F7" stroke="#8E82A1"/>
+              <text x="346" y="339" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#363330">永田町・平河町・赤坂見附</text>
+              <text x="346" y="355" text-anchor="middle" font-size="10.5" fill="#5D5270">12/7 平河町砂防會館(防災士)</text>
+              <text x="346" y="371" text-anchor="middle" font-size="10.5" fill="#7E4F55">12/8 赤坂 Tenshige 晚宴</text>
+
+              <!-- 站點：大手町 -->
+              <circle cx="445" cy="238" r="10" fill="#FFFDF9" stroke="#B98389" stroke-width="4"/>
+              <rect x="366" y="114" width="132" height="46" rx="8" fill="#FAF2EC" stroke="#C68B6B"/>
+              <text x="432" y="134" text-anchor="middle" font-size="13" font-weight="bold" fill="#363330">大手町站</text>
+              <text x="432" y="150" text-anchor="middle" font-size="10.5" fill="#8C593E">12/8 東京消防廳本部</text>
+              <line x1="435" y1="160" x2="443" y2="225" stroke="#C68B6B" stroke-width="1.5" stroke-dasharray="3,3"/>
+
+              <!-- 站點：東京車站 -->
+              <circle cx="535" cy="225" r="11" fill="#FFFDF9" stroke="#363330" stroke-width="4"/>
+              <rect x="478" y="280" width="132" height="46" rx="8" fill="#F9F5EA" stroke="#C2A368"/>
+              <text x="544" y="299" text-anchor="middle" font-size="13" font-weight="bold" fill="#363330">東京車站</text>
+              <text x="544" y="316" text-anchor="middle" font-size="10.5" fill="#856B35">12/9 07:20 北陸新幹線</text>
+              <line x1="540" y1="280" x2="536" y2="237" stroke="#C2A368" stroke-width="1.5" stroke-dasharray="3,3"/>
+
+              <!-- 站點：錦糸町 / 押上 -->
+              <circle cx="655" cy="205" r="10" fill="#FFFDF9" stroke="#8E82A1" stroke-width="4"/>
+              <rect x="590" y="226" width="168" height="46" rx="8" fill="#EFF4F0" stroke="#789482"/>
+              <text x="674" y="245" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#363330">錦糸町・押上站</text>
+              <text x="674" y="262" text-anchor="middle" font-size="10.5" fill="#4D6957">12/8 本所防災館・晴空塔</text>
+
+              <!-- 站點：上野 / 京成上野 -->
+              <circle cx="535" cy="112" r="10" fill="#FFFDF9" stroke="#789482" stroke-width="4"/>
+              <rect x="448" y="42" width="152" height="46" rx="8" fill="#EFF4F0" stroke="#789482"/>
+              <text x="524" y="61" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#363330">上野／京成上野</text>
+              <text x="524" y="78" text-anchor="middle" font-size="10.5" fill="#4D6957">12/11 APA上野・阿美橫丁</text>
+
+              <!-- 站點：成田機場 -->
+              <circle cx="690" cy="112" r="10" fill="#FFFDF9" stroke="#639194" stroke-width="4"/>
+              <rect x="628" y="42" width="130" height="46" rx="8" fill="#ECF4F4" stroke="#639194"/>
+              <text x="693" y="61" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#363330">成田機場 NRT</text>
+              <text x="693" y="78" text-anchor="middle" font-size="10.5" fill="#42676A">Skyliner 約43分</text>
+
+              <!-- 圖例 -->
+              <rect x="20" y="416" width="740" height="36" rx="8" fill="#FAF7F2" stroke="#E6DFD5"/>
+              <line x1="36" y1="434" x2="60" y2="434" stroke="#B98389" stroke-width="5"/>
+              <text x="66" y="438" font-size="11" fill="#363330">丸之內線</text>
+              <line x1="134" y1="434" x2="158" y2="434" stroke="#8E82A1" stroke-width="5"/>
+              <text x="164" y="438" font-size="11" fill="#363330">半藏門線</text>
+              <line x1="232" y1="434" x2="256" y2="434" stroke="#C68B6B" stroke-width="4" stroke-dasharray="6,3"/>
+              <text x="262" y="438" font-size="11" fill="#363330">JR中央線</text>
+              <line x1="336" y1="434" x2="360" y2="434" stroke="#789482" stroke-width="5"/>
+              <text x="366" y="438" font-size="11" fill="#363330">JR山手線</text>
+              <line x1="440" y1="434" x2="464" y2="434" stroke="#6C879E" stroke-width="5"/>
+              <text x="470" y="438" font-size="11" fill="#363330">京成 Skyliner</text>
+              <text x="620" y="438" font-size="10.5" fill="#6E6862">★ 點擊可放大拖曳</text>
+            </svg>
+          </div>
+        </div>
+
+        <!-- SVG 2：北陸新幹線與能登鐵道移動圖 -->
+        <div class="bg-[#FFFDF9] rounded-2xl border border-[#E6DFD5] shadow-book overflow-hidden flex flex-col">
+          <div class="px-4 py-3 border-b border-[#E6DFD5] flex items-center justify-between bg-[#FAF2EC]/80">
+            <div>
+              <span class="inline-block px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-[#C68B6B] text-white mb-1">北陸新幹線・能登半島</span>
+              <h3 class="font-bold text-[#363330] text-sm sm:text-base">北陸新幹線與能登鐵道移動圖</h3>
+            </div>
+            <button onclick="openLightbox('svg-hokuriku', '北陸新幹線與能登鐵道移動圖')" class="px-3 py-1.5 rounded-xl bg-[#C68B6B] text-white text-xs font-bold hover:bg-[#B27757] transition flex items-center gap-1 shrink-0">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"/></svg>
+              放大查看
+            </button>
+          </div>
+          <div onclick="openLightbox('svg-hokuriku', '北陸新幹線與能登鐵道移動圖')" class="p-3 cursor-zoom-in bg-[#FAF7F2] flex-1 flex items-center justify-center hover:opacity-95 transition">
+            <svg id="svg-hokuriku" viewBox="0 0 780 470" class="w-full h-auto rounded-xl bg-[#FFFDF9] border border-[#E6DFD5]" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <pattern id="grid-hoku" width="38" height="38" patternUnits="userSpaceOnUse">
+                  <path d="M 38 0 L 0 0 0 38" fill="none" stroke="#F1ECE4" stroke-width="1"/>
+                </pattern>
+              </defs>
+              <rect width="780" height="470" fill="url(#grid-hoku)" rx="12"/>
+              <text x="24" y="34" font-size="16" font-weight="bold" fill="#363330" font-family="Microsoft JhengHei, sans-serif">HOKURIKU &amp; NOTO 跨縣市鐵道與勘查路線</text>
+              <text x="24" y="54" font-size="11.5" fill="#6E6862" font-family="Microsoft JhengHei, sans-serif">12/9 東京→金澤→七尾 ｜ 12/10 輪島・白丸・寶立包車 ｜ 12/11 能登鐵道→上野</text>
+
+              <!-- 能登半島淡青色輪廓 -->
+              <path d="M 285 348 C 300 272, 335 222, 355 162 C 375 110, 452 86, 532 96 C 568 100, 578 136, 536 168 C 486 202, 446 238, 430 298 C 414 344, 348 368, 285 348 Z" fill="#639194" fill-opacity="0.10" stroke="#639194" stroke-opacity="0.35" stroke-width="2"/>
+
+              <!-- 北陸新幹線（霧霾藍 #6C879E） -->
+              <path d="M 672 342 Q 480 370 262 322" fill="none" stroke="#6C879E" stroke-width="7" stroke-linecap="round"/>
+              <text x="480" y="370" text-anchor="middle" font-size="12" font-weight="bold" fill="#4B6378">北陸新幹線（約 2小時24分）</text>
+
+              <!-- JR 七尾線（乾燥玫瑰粉 #B98389） -->
+              <path d="M 262 322 L 358 248" fill="none" stroke="#B98389" stroke-width="6.5" stroke-linecap="round"/>
+              <text x="275" y="270" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#8C535A">JR 七尾線</text>
+
+              <!-- 能登鐵道（鼠尾草綠 #789482）：七尾 → 和倉溫泉 → 穴水 -->
+              <path d="M 358 248 L 404 206 L 444 166" fill="none" stroke="#789482" stroke-width="6.5" stroke-linecap="round"/>
+              <text x="478" y="222" text-anchor="middle" font-size="11" font-weight="bold" fill="#4D6957">能登鐵道（601D / 語り部2號）</text>
+
+              <!-- 12/10 包車路線（薰衣草霧紫 #8E82A1 虛線） -->
+              <path d="M 358 248 Q 342 162 400 112 Q 475 92 560 118 Q 532 178 404 206" fill="none" stroke="#8E82A1" stroke-width="4.5" stroke-dasharray="7,5" stroke-linecap="round"/>
+
+              <!-- 站點：東京/上野 -->
+              <circle cx="672" cy="342" r="11" fill="#FFFDF9" stroke="#6C879E" stroke-width="4"/>
+              <rect x="608" y="268" width="142" height="54" rx="8" fill="#EEF3F7" stroke="#6C879E"/>
+              <text x="679" y="288" text-anchor="middle" font-size="13" font-weight="bold" fill="#363330">東京／上野</text>
+              <text x="679" y="305" text-anchor="middle" font-size="10.5" fill="#4B6378">12/9 07:20 去程</text>
+              <text x="679" y="318" text-anchor="middle" font-size="10.5" fill="#4B6378">12/11 返抵 APA上野</text>
+
+              <!-- 站點：金澤 -->
+              <circle cx="262" cy="322" r="11" fill="#FFFDF9" stroke="#C68B6B" stroke-width="4"/>
+              <rect x="24" y="286" width="202" height="64" rx="8" fill="#FAF2EC" stroke="#C68B6B"/>
+              <text x="125" y="306" text-anchor="middle" font-size="13" font-weight="bold" fill="#363330">金澤站・石川縣廳</text>
+              <text x="125" y="323" text-anchor="middle" font-size="10.5" fill="#8C593E">12/9 10:30 拜會石川縣廳</text>
+              <text x="125" y="339" text-anchor="middle" font-size="10.5" fill="#6E6862">19樓展望台・下午轉JR七尾線</text>
+
+              <!-- 站點：七尾 -->
+              <circle cx="358" cy="248" r="10.5" fill="#FFFDF9" stroke="#C2A368" stroke-width="4"/>
+              <rect x="64" y="198" width="218" height="52" rx="8" fill="#F9F5EA" stroke="#C2A368"/>
+              <text x="173" y="218" text-anchor="middle" font-size="13" font-weight="bold" fill="#363330">七尾站（12/9–10 連泊）</text>
+              <text x="173" y="236" text-anchor="middle" font-size="10.5" fill="#856B35">Hotel Route Inn 七尾駅東</text>
+              <line x1="282" y1="228" x2="346" y2="245" stroke="#C2A368" stroke-width="1.5" stroke-dasharray="3,3"/>
+
+              <!-- 站點：和倉溫泉 -->
+              <circle cx="404" cy="206" r="7.5" fill="#FFFDF9" stroke="#639194" stroke-width="3.5"/>
+              <text x="342" y="192" font-size="11.5" font-weight="bold" fill="#42676A">和倉溫泉</text>
+
+              <!-- 站點：穴水 -->
+              <circle cx="444" cy="166" r="9.5" fill="#FFFDF9" stroke="#789482" stroke-width="4"/>
+              <rect x="534" y="156" width="218" height="52" rx="8" fill="#EFF4F0" stroke="#789482"/>
+              <text x="643" y="176" text-anchor="middle" font-size="13" font-weight="bold" fill="#363330">穴水站（能登鐵道）</text>
+              <text x="643" y="194" text-anchor="middle" font-size="10.5" fill="#4D6957">12/11 社長談話・語り部列車2號</text>
+              <line x1="534" y1="178" x2="455" y2="168" stroke="#789482" stroke-width="1.5" stroke-dasharray="3,3"/>
+
+              <!-- 勘查點：輪島 & 白丸/寶立 -->
+              <circle cx="400" cy="112" r="8.5" fill="#FFFDF9" stroke="#8E82A1" stroke-width="3.5"/>
+              <rect x="198" y="76" width="174" height="46" rx="8" fill="#F3F0F7" stroke="#8E82A1"/>
+              <text x="285" y="96" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#363330">輪島市（朝市火災遺跡）</text>
+              <text x="285" y="113" text-anchor="middle" font-size="10.5" fill="#5D5270">12/10 專屬包車實地勘查</text>
+
+              <circle cx="560" cy="118" r="8.5" fill="#FFFDF9" stroke="#8E82A1" stroke-width="3.5"/>
+              <rect x="582" y="76" width="174" height="46" rx="8" fill="#F3F0F7" stroke="#8E82A1"/>
+              <text x="669" y="96" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#363330">白丸地區・寶立地區</text>
+              <text x="669" y="113" text-anchor="middle" font-size="10.5" fill="#5D5270">12/10 震災面貌實地勘查</text>
+
+              <!-- 圖例 -->
+              <rect x="20" y="416" width="740" height="36" rx="8" fill="#FAF7F2" stroke="#E6DFD5"/>
+              <line x1="36" y1="434" x2="62" y2="434" stroke="#6C879E" stroke-width="5"/>
+              <text x="69" y="438" font-size="11" fill="#363330">北陸新幹線</text>
+              <line x1="150" y1="434" x2="176" y2="434" stroke="#B98389" stroke-width="5"/>
+              <text x="183" y="438" font-size="11" fill="#363330">JR七尾線</text>
+              <line x1="258" y1="434" x2="284" y2="434" stroke="#789482" stroke-width="5"/>
+              <text x="291" y="438" font-size="11" fill="#363330">能登鐵道</text>
+              <line x1="366" y1="434" x2="392" y2="434" stroke="#8E82A1" stroke-width="4" stroke-dasharray="6,4"/>
+              <text x="399" y="438" font-size="11" fill="#363330">12/10 包車勘查路線</text>
+              <text x="620" y="438" font-size="10.5" fill="#6E6862">★ 點擊可放大拖曳</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- 自訂上傳路線圖畫廊 -->
+      <div class="mb-4 flex items-center justify-between">
+        <h3 class="text-base font-bold text-[#363330] flex items-center gap-2">
+          <span class="w-2.5 h-2.5 rounded-full bg-[#639194]"></span>
+          我的自訂路線圖與截圖收藏
+        </h3>
+        <span id="custom-maps-count" class="text-xs font-bold px-2.5 py-1 rounded-full bg-[#ECF4F4] text-[#456B6E]">0 張圖片</span>
+      </div>
+      <div id="custom-maps-gallery" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- JS 渲染 -->
+      </div>
+    </section>
+
+    <!-- ==================== 分頁三：景點與美食地圖清單 ==================== -->
+    <section id="tab-spots" class="tab-panel hidden fade-in">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4">
+        <div>
+          <h2 class="text-lg sm:text-xl font-bold text-[#363330] flex items-center gap-2">
+            <span class="w-2.5 h-6 rounded-full bg-[#C68B6B] inline-block"></span>
+            景點、美食與 Google Maps 清單
+          </h2>
+          <p class="text-xs sm:text-sm text-[#6E6862] mt-0.5">精選各拜會地點周邊美食與景點（全數避開牛肉料理，主打海鮮、豬排、拉麵、素食與和菓子）。</p>
+        </div>
+        <button onclick="openSpotModal()" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-xl bg-[#C68B6B] hover:bg-[#B27757] text-white text-sm font-bold shadow-sm transition active:scale-95">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg>
+          新增地點
+        </button>
+      </div>
+
+      <!-- 雙重彩色篩選器 -->
+      <div class="bg-[#FFFDF9] rounded-2xl border border-[#E6DFD5] p-4 mb-5 shadow-soft space-y-3.5">
+        <div>
+          <div class="text-xs font-bold text-[#6E6862] mb-2">1. 依分類篩選（各類獨立代表色）</div>
+          <div id="spot-category-filters" class="flex flex-wrap gap-2"></div>
+        </div>
+        <div class="border-t border-[#EFEAE1]"></div>
+        <div>
+          <div class="text-xs font-bold text-[#6E6862] mb-2">2. 依每日拜會地點周邊快速推薦</div>
+          <div id="spot-day-filters" class="flex items-center gap-2 overflow-x-auto no-scrollbar pb-1"></div>
+        </div>
+      </div>
+
+      <div class="flex items-center justify-between mb-3 px-1">
+        <span id="spots-result-count" class="text-xs font-bold text-[#6E6862]">共顯示 0 個推薦地點</span>
+      </div>
+
+      <div id="spots-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- JS 渲染 -->
+      </div>
+    </section>
+
+    <!-- ==================== 分頁四：團員資訊與行前總覽 ==================== -->
+    <section id="tab-team" class="tab-panel hidden fade-in space-y-6">
+      <!-- 區塊 1：團員名冊卡片 -->
+      <div>
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4">
+          <div>
+            <h2 class="text-lg sm:text-xl font-bold text-[#363330] flex items-center gap-2">
+              <span class="w-2.5 h-6 rounded-full bg-[#8E82A1] inline-block"></span>
+              團員名冊與分工資訊
+            </h2>
+            <p class="text-xs sm:text-sm text-[#6E6862] mt-0.5">每位團員配屬專屬莫蘭迪主題卡片，可隨時點擊編輯聯絡電話、房號與飲食備註。</p>
+          </div>
+          <button onclick="openMemberModal()" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-xl bg-[#8E82A1] hover:bg-[#7A6E8D] text-white text-sm font-bold shadow-sm transition active:scale-95">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg>
+            新增團員
+          </button>
+        </div>
+        <div id="team-list" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <!-- JS 渲染 -->
+        </div>
+      </div>
+
+      <!-- 區塊 2：航班（湖水青灰）與住宿（燕麥芥末金）總覽 -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+        <!-- 航班卡片：湖水青灰 #639194 -->
+        <div class="bg-[#FFFDF9] rounded-2xl border border-[#639194]/35 p-5 shadow-book">
+          <h3 class="font-bold text-[#363330] text-base mb-4 flex items-center gap-2">
+            <span class="w-8 h-8 rounded-xl bg-[#ECF4F4] text-[#456B6E] border border-[#639194]/30 flex items-center justify-center">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"/></svg>
+            </span>
+            往返航班資訊（長榮航空）
+          </h3>
+          <div class="space-y-3">
+            <div class="p-3.5 rounded-xl bg-[#ECF4F4]/70 border border-[#639194]/25">
+              <div class="flex items-center justify-between mb-1.5">
+                <span class="text-xs font-bold px-2.5 py-0.5 rounded-full bg-[#6C879E] text-white">去程 12/6 (日)</span>
+                <span class="text-xs font-bold text-[#456B6E]">EVA Air BR198</span>
+              </div>
+              <div class="flex items-center justify-between text-sm sm:text-base font-bold text-[#363330]">
+                <div>08:50 <span class="text-xs font-normal text-[#6E6862] block">桃園國際機場 TPE</span></div>
+                <div class="text-[#639194] text-xs px-2 font-bold">──── ✈ ────</div>
+                <div class="text-right">12:55 <span class="text-xs font-normal text-[#6E6862] block">成田國際機場 NRT</span></div>
+              </div>
+            </div>
+            <div class="p-3.5 rounded-xl bg-[#ECF4F4]/70 border border-[#639194]/25">
+              <div class="flex items-center justify-between mb-1.5">
+                <span class="text-xs font-bold px-2.5 py-0.5 rounded-full bg-[#639194] text-white">回程 12/12 (六)</span>
+                <span class="text-xs font-bold text-[#456B6E]">EVA Air BR197</span>
+              </div>
+              <div class="flex items-center justify-between text-sm sm:text-base font-bold text-[#363330]">
+                <div>14:00 <span class="text-xs font-normal text-[#6E6862] block">成田國際機場 NRT</span></div>
+                <div class="text-[#639194] text-xs px-2 font-bold">──── ✈ ────</div>
+                <div class="text-right">17:05 <span class="text-xs font-normal text-[#6E6862] block">桃園國際機場 TPE</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 住宿總覽卡片：燕麥芥末金 #C2A368 -->
+        <div class="bg-[#FFFDF9] rounded-2xl border border-[#C2A368]/40 p-5 shadow-book">
+          <h3 class="font-bold text-[#363330] text-base mb-4 flex items-center gap-2">
+            <span class="w-8 h-8 rounded-xl bg-[#F9F5EA] text-[#856B35] border border-[#C2A368]/35 flex items-center justify-center">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"/></svg>
+            </span>
+            下榻飯店總覽（共 6 晚）
+          </h3>
+          <div class="space-y-2.5">
+            <div class="p-3 rounded-xl bg-[#F9F5EA]/75 border border-[#C2A368]/30 flex items-start justify-between gap-2">
+              <div>
+                <span class="inline-block px-2 py-0.5 rounded-full text-[11px] font-bold bg-[#6C879E] text-white mb-1">12/6 – 12/9（3晚・東京）</span>
+                <div class="font-bold text-sm text-[#363330]">ホテル京阪 東京四谷</div>
+                <div class="text-xs text-[#6E6862] mt-0.5">〒160-0004 東京都新宿区四谷1丁目24</div>
+              </div>
+              <a href="https://www.google.com/maps/search/?api=1&query=ホテル京阪+東京四谷+東京都新宿区四谷1丁目24" target="_blank" rel="noopener" class="shrink-0 px-2.5 py-1.5 rounded-lg bg-[#FFFDF9] border border-[#C2A368]/40 text-xs font-bold text-[#856B35] hover:bg-[#C2A368] hover:text-white transition">地圖 ↗</a>
+            </div>
+            <div class="p-3 rounded-xl bg-[#F9F5EA]/75 border border-[#C2A368]/30 flex items-start justify-between gap-2">
+              <div>
+                <span class="inline-block px-2 py-0.5 rounded-full text-[11px] font-bold bg-[#C68B6B] text-white mb-1">12/9 – 12/11（2晚・七尾）</span>
+                <div class="font-bold text-sm text-[#363330]">ホテルルートイン七尾駅東 (Hotel Route Inn Nanao Ekihigashi)</div>
+                <div class="text-xs text-[#6E6862] mt-0.5">七尾市本府中町ハ31-1, 926-0021</div>
+              </div>
+              <a href="https://www.google.com/maps/search/?api=1&query=ホテルルートイン七尾駅東+七尾市本府中町ハ31-1" target="_blank" rel="noopener" class="shrink-0 px-2.5 py-1.5 rounded-lg bg-[#FFFDF9] border border-[#C2A368]/40 text-xs font-bold text-[#856B35] hover:bg-[#C2A368] hover:text-white transition">地圖 ↗</a>
+            </div>
+            <div class="p-3 rounded-xl bg-[#F9F5EA]/75 border border-[#C2A368]/30 flex items-start justify-between gap-2">
+              <div>
+                <span class="inline-block px-2 py-0.5 rounded-full text-[11px] font-bold bg-[#B98389] text-white mb-1">12/11 – 12/12（1晚・上野）</span>
+                <div class="font-bold text-sm text-[#363330]">APA Hotel Ueno Ekiminami</div>
+                <div class="text-xs text-[#6E6862] mt-0.5">〒110-0005 東京都台東区上野6-7-21</div>
+              </div>
+              <a href="https://www.google.com/maps/search/?api=1&query=APA+Hotel+Ueno+Ekiminami+東京都台東区上野6-7-21" target="_blank" rel="noopener" class="shrink-0 px-2.5 py-1.5 rounded-lg bg-[#FFFDF9] border border-[#C2A368]/40 text-xs font-bold text-[#856B35] hover:bg-[#C2A368] hover:text-white transition">地圖 ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 區塊 3：拜會送禮總數量清點表（暖杏陶土橘） & 緊急聯絡（湖水青灰） -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+        <!-- 送禮清點表：暖杏陶土橘 #C68B6B -->
+        <div class="bg-[#FFFDF9] rounded-2xl border border-[#C68B6B]/35 p-5 shadow-book">
+          <div class="flex items-center justify-between mb-3">
+            <h3 class="font-bold text-[#363330] text-base flex items-center gap-2">
+              <span class="w-8 h-8 rounded-xl bg-[#FAF2EC] text-[#8C593E] border border-[#C68B6B]/30 flex items-center justify-center">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 11.25v8.25a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 109.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1114.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z"/></svg>
+              </span>
+              拜會送禮總數量清點清單
+            </h3>
+            <span id="gift-progress" class="text-xs font-bold px-2.5 py-1 rounded-full bg-[#FAF2EC] text-[#8C593E] border border-[#C68B6B]/30">0 / 8 已打包</span>
+          </div>
+          <p class="text-xs text-[#6E6862] mb-3">點擊勾選即可追蹤打包進度，資料自動保存於本機。</p>
+          <div id="gift-checklist" class="space-y-2">
+            <!-- JS 渲染 -->
+          </div>
+        </div>
+
+        <!-- 日本緊急聯絡與旅伴資料同步 -->
+        <div class="space-y-5">
+          <!-- 緊急聯絡：湖水青灰 #639194 -->
+          <div class="bg-[#FFFDF9] rounded-2xl border border-[#639194]/35 p-5 shadow-book">
+            <h3 class="font-bold text-[#363330] text-base mb-3 flex items-center gap-2">
+              <span class="w-8 h-8 rounded-xl bg-[#ECF4F4] text-[#456B6E] border border-[#639194]/30 flex items-center justify-center">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+              </span>
+              日本緊急聯絡與實用資訊
+            </h3>
+            <div class="grid grid-cols-2 gap-2.5 mb-3">
+              <a href="tel:110" class="p-3 rounded-xl bg-[#F8EFF0] border border-[#B98389]/35 flex flex-col items-center justify-center hover:bg-[#B98389]/15 transition">
+                <span class="text-xs text-[#6E6862]">日本報警</span>
+                <span class="text-xl font-bold text-[#8C535A]">110</span>
+              </a>
+              <a href="tel:119" class="p-3 rounded-xl bg-[#ECF4F4] border border-[#639194]/35 flex flex-col items-center justify-center hover:bg-[#639194]/15 transition">
+                <span class="text-xs text-[#6E6862]">救護車／火警</span>
+                <span class="text-xl font-bold text-[#42676A]">119</span>
+              </a>
+            </div>
+            <div class="p-3.5 rounded-xl bg-[#ECF4F4]/60 border border-[#639194]/25 text-xs space-y-1.5">
+              <div class="font-bold text-[#363330]">台北駐日經濟文化代表處（東京）</div>
+              <div class="text-[#57524D]">代表處總機：<a href="tel:+81332807811" class="underline text-[#456B6E] font-bold">+81-3-3280-7811</a></div>
+              <div class="text-[#57524D]">急難救助專線：<a href="tel:+818010097179" class="underline text-[#8C535A] font-bold">+81-80-1009-7179</a>（日本境內直撥 080-1009-7179）</div>
+            </div>
+          </div>
+
+          <!-- 旅伴資料同步工具 -->
+          <div class="bg-[#FFFDF9] rounded-2xl border border-[#8E82A1]/35 p-5 shadow-book">
+            <h3 class="font-bold text-[#363330] text-base mb-1.5 flex items-center gap-2">
+              <span class="w-8 h-8 rounded-xl bg-[#F3F0F7] text-[#5D5270] border border-[#8E82A1]/30 flex items-center justify-center">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z"/></svg>
+              </span>
+              旅伴資料分享與同步
+            </h3>
+            <p class="text-xs text-[#6E6862] mb-3.5">更新行程、景點或團員資訊後，可一鍵複製 JSON 貼到 LINE 群組，旅伴點選「匯入」即可快速同步。</p>
+            <div class="flex flex-wrap gap-2.5">
+              <button onclick="exportDataJSON()" class="flex-1 px-4 py-2.5 rounded-xl bg-[#8E82A1] hover:bg-[#7A6E8D] text-white text-xs sm:text-sm font-bold transition active:scale-95">
+                一鍵複製 JSON 分享
+              </button>
+              <button onclick="openImportModal()" class="flex-1 px-4 py-2.5 rounded-xl bg-[#F3F0F7] hover:bg-[#E7E1F0] text-[#5D5270] border border-[#8E82A1]/30 text-xs sm:text-sm font-bold transition active:scale-95">
+                匯入旅伴資料
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== 手機版底部固定彩色導覽列 ==================== -->
+  <nav class="md:hidden fixed bottom-0 inset-x-0 bg-[#FFFDF9]/95 backdrop-blur-md border-t border-[#E6DFD5] z-30 px-2 py-1.5 shadow-[0_-4px_14px_rgba(54,51,48,0.07)]" aria-label="手機版主選單">
+    <div class="grid grid-cols-4 gap-1 max-w-md mx-auto">
+      <button onclick="switchTab('itinerary')" data-tab="itinerary" class="nav-btn-mobile flex flex-col items-center justify-center py-1.5 rounded-xl transition">
+        <svg class="w-5 h-5 mb-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"/></svg>
+        <span class="text-[11px] font-bold">每日行程</span>
+      </button>
+      <button onclick="switchTab('metro')" data-tab="metro" class="nav-btn-mobile flex flex-col items-center justify-center py-1.5 rounded-xl transition">
+        <svg class="w-5 h-5 mb-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z"/></svg>
+        <span class="text-[11px] font-bold">地鐵交通</span>
+      </button>
+      <button onclick="switchTab('spots')" data-tab="spots" class="nav-btn-mobile flex flex-col items-center justify-center py-1.5 rounded-xl transition">
+        <svg class="w-5 h-5 mb-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+        <span class="text-[11px] font-bold">景點美食</span>
+      </button>
+      <button onclick="switchTab('team')" data-tab="team" class="nav-btn-mobile flex flex-col items-center justify-center py-1.5 rounded-xl transition">
+        <svg class="w-5 h-5 mb-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z"/></svg>
+        <span class="text-[11px] font-bold">團員總覽</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ==================== 彈窗：新增／編輯行程 ==================== -->
+  <div id="modal-itinerary" class="fixed inset-0 z-50 hidden items-center justify-center bg-[#363330]/50 backdrop-blur-xs p-4">
+    <div class="bg-[#FFFDF9] rounded-2xl border border-[#E6DFD5] w-full max-w-lg max-h-[90vh] overflow-y-auto shadow-2xl">
+      <div class="sticky top-0 bg-[#FFFDF9] px-5 py-4 border-b border-[#E6DFD5] flex items-center justify-between">
+        <h3 id="modal-itinerary-title" class="font-bold text-base text-[#363330]">新增行程</h3>
+        <button onclick="closeModal('modal-itinerary')" class="p-1.5 rounded-lg text-[#6E6862] hover:bg-[#FAF7F2]">✕</button>
+      </div>
+      <form id="form-itinerary" onsubmit="saveItineraryItem(event)" class="p-5 space-y-3.5 text-sm">
+        <input type="hidden" id="itin-id" />
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-bold text-[#6E6862] mb-1">日期 *</label>
+            <select id="itin-day" required class="w-full rounded-xl border border-[#E6DFD5] bg-[#FAF7F2] px-3 py-2 text-[#363330] focus:outline-none focus:border-[#789482]">
+              <option value="12/6">12/6（日）移動日・台北→東京</option>
+              <option value="12/7">12/7（一）東京考察 Day 1</option>
+              <option value="12/8">12/8（二）東京考察 Day 2</option>
+              <option value="12/9">12/9（三）東京→金澤→七尾</option>
+              <option value="12/10">12/10（四）輪島・能登震災勘查</option>
+              <option value="12/11">12/11（五）能登鐵道→返回東京上野</option>
+              <option value="12/12">12/12（六）返國日・東京→台北</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-[#6E6862] mb-1">交通工具 *</label>
+            <select id="itin-transport" required class="w-full rounded-xl border border-[#E6DFD5] bg-[#FAF7F2] px-3 py-2 text-[#363330] focus:outline-none focus:border-[#789482]">
+              <option value="航班">航班</option>
+              <option value="京成電鐵">京成電鐵</option>
+              <option value="東京地鐵">東京地鐵</option>
+              <option value="北陸新幹線">北陸新幹線</option>
+              <option value="JR鐵路">JR鐵路</option>
+              <option value="能登鐵道">能登鐵道</option>
+              <option value="專屬包車">專屬包車</option>
+              <option value="計程車/公車">計程車/公車</option>
+              <option value="入住飯店">入住飯店</option>
+              <option value="步行/其他">步行/其他</option>
+            </select>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-bold text-[#6E6862] mb-1">出發時間 *</label>
+            <input type="text" id="itin-start" required placeholder="例如 09:30 或 上午" class="w-full rounded-xl border border-[#E6DFD5] bg-[#FAF7F2] px-3 py-2 focus:outline-none focus:border-[#789482]" />
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-[#6E6862] mb-1">抵達時間 *</label>
+            <input type="text" id="itin-end" required placeholder="例如 11:30 或 確認中" class="w-full rounded-xl border border-[#E6DFD5] bg-[#FAF7F2] px-3 py-2 focus:outline-none focus:border-[#789482]" />
+          </div>
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-[#6E6862] mb-1">交通細節補充（選填）</label>
+          <input type="text" id="itin-transport-detail" placeholder="例如：長榮航空 BR198 / 丸之內線（四谷→大手町）" class="w-full rounded-xl border border-[#E6DFD5] bg-[#FAF7F2] px-3 py-2 focus:outline-none focus:border-[#789482]" />
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-[#6E6862] mb-1">行程標題／地點 *</label>
+          <input type="text" id="itin-title" required placeholder="例如：拜會東京消防廳本部" class="w-full rounded-xl border border-[#E6DFD5] bg-[#FAF7F2] px-3 py-2 focus:outline-none focus:border-[#789482]" />
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-[#6E6862] mb-1">地址（用於一鍵開啟 Google Maps）</label>
+          <input type="text" id="itin-address" placeholder="例如：100-8119 東京都千代田區大手町 1-3-5" class="w-full rounded-xl border border-[#E6DFD5] bg-[#FAF7F2] px-3 py-2 focus:outline-none focus:border-[#789482]" />
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-[#6E6862] mb-1">詳細任務說明</label>
+          <textarea id="itin-task" rows="3" placeholder="任務內容、集合時間或與會人員..." class="w-full rounded-xl border border-[#E6DFD5] bg-[#FAF7F2] px-3 py-2 focus:outline-none focus:border-[#789482]"></textarea>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-bold text-[#6E6862] mb-1">聯絡窗口（姓名／單位）</label>
+            <input type="text" id="itin-contact" placeholder="例如：佐伯（總務課國際業務係）" class="w-full rounded-xl border border-[#E6DFD5] bg-[#FAF7F2] px-3 py-2 focus:outline-none focus:border-[#789482]" />
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-[#6E6862] mb-1">窗口電話（支援直撥）</label>
+            <input type="text" id="itin-phone" placeholder="例如：03-3212-2111" class="w-full rounded-xl border border-[#E6DFD5] bg-[#FAF7F2] px-3 py-2 focus:outline-none focus:border-[#789482]" />
+          </div>
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-[#6E6862] mb-1">窗口 Email（選填）</label>
+          <input type="email" id="itin-email" placeholder="example@metro.tokyo.jp" class="w-full rounded-xl border border-[#E6DFD5] bg-[#FAF7F2] px-3 py-2 focus:outline-none focus:border-[#789482]" />
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-[#6E6862] mb-1">送禮清單備註（選填）</label>
+          <input type="text" id="itin-gifts" placeholder="例如：大鳳梨酥、茶葉、花生糖" class="w-full rounded-xl border border-[#E6DFD5] bg-[#FAF7F2] px-3 py-2 focus:outline-none focus:border-[#789482]" />
+        </div>
+        <div class="flex justify-end gap-2 pt-2">
+          <button type="button" onclick="closeModal('modal-itinerary')" class="px-4 py-2.5 rounded-xl bg-[#FAF7F2] text-[#6E6862] font-bold hover:bg-[#EFEAE1]">取消</button>
+          <button type="submit" class="px-5 py-2.5 rounded-xl bg-[#789482] text-white font-bold hover:bg-[#657F6E]">儲存行程</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==================== 彈窗：上傳自訂地圖圖片 ==================== -->
+  <div id="modal-upload-map" class="fixed inset-0 z-50 hidden items-center justify-center bg-[#363330]/50 backdrop-blur-xs p-4">
+    <div class="bg-[#FFFDF9] rounded-2xl border border-[#E6DFD5] w-full max-w-md shadow-2xl overflow-hidden">
+      <div class="px-5 py-4 border-b border-[#E6DFD5] flex items-center justify-between">
+        <h3 class="font-bold text-base text-[#363330]">上傳自訂路線圖／截圖</h3>
+        <button onclick="closeModal('modal-upload-map')" class="p-1.5 rounded-lg text-[#6E6862] hover:bg-[#FAF7F2]">✕</button>
+      </div>
+      <form id="form-upload-map" onsubmit="handleUploadMap(event)" class="p-5 space-y-3.5 text-sm">
+        <div>
+          <label class="block text-xs font-bold text-[#6E6862] mb-1">圖片標題 *</label>
+          <input type="text" id="map-title" required placeholder="例如：東京 Metro 官方路線圖" class="w-full rounded-xl border border-[#E6DFD5] bg-[#FAF7F2] px-3 py-2 focus:outline-none focus:border-[#6C879E]" />
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-[#6E6862] mb-1">地區標籤／備註 *</label>
+          <input type="text" id="map-region" required placeholder="例如：東京地鐵、金澤公車、飯店出口指引" class="w-full rounded-xl border border-[#E6DFD5] bg-[#FAF7F2] px-3 py-2 focus:outline-none focus:border-[#6C879E]" />
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-[#6E6862] mb-1">選擇圖片檔案（PNG / JPG / WEBP）*</label>
+          <input type="file" id="map-file" accept="image/png,image/jpeg,image/webp" required class="w-full text-xs text-[#6E6862] file:mr-3 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-bold file:bg-[#EEF3F7] file:text-[#4B6378] hover:file:bg-[#DCE7F0]" />
+          <p class="text-[11px] text-[#6E6862] mt-1">圖片將自動最佳化壓縮並存於您的瀏覽器本機空間。</p>
+        </div>
+        <div class="flex justify-end gap-2 pt-2">
+          <button type="button" onclick="closeModal('modal-upload-map')" class="px-4 py-2.5 rounded-xl bg-[#FAF7F2] text-[#6E6862] font-bold">取消</button>
+          <button type="submit" class="px-5 py-2.5 rounded-xl bg-[#6C879E] text-white font-bold hover:bg-[#5A748A]">上傳並加入畫廊</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==================== 彈窗：新增景點／美食 ==================== -->
+  <div id="modal-spot" class="fixed inset-0 z-50 hidden items-center justify-center bg-[#363330]/50 backdrop-blur-xs p-4">
+    <div class="bg-[#FFFDF9] rounded-2xl border border-[#E6DFD5] w-full max-w-md max-h-[90vh] overflow-y-auto shadow-2xl">
+      <div class="sticky top-0 bg-[#FFFDF9] px-5 py-4 border-b border-[#E6DFD5] flex items-center justify-between">
+        <h3 class="font-bold text-base text-[#363330]">新增景點／美食地點</h3>
+        <button onclick="closeModal('modal-spot')" class="p-1.5 rounded-lg text-[#6E6862] hover:bg-[#FAF7F2]">✕</button>
+      </div>
+      <form id="form-spot" onsubmit="saveSpotItem(event)" class="p-5 space-y-3.5 text-sm">
+        <div>
+          <label class="block text-xs font-bold text-[#6E6862] mb-1">地點名稱 *</label>
+          <input type="text" id="spot-name" required placeholder="例如：東京晴空塔" class="w-full rounded-xl border border-[#E6DFD5] bg-[#FAF7F2] px-3 py-2 focus:outline-none focus:border-[#C68B6B]" />
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-bold text-[#6E6862] mb-1">分類 *</label>
+            <select id="spot-category" required class="w-full rounded-xl border border-[#E6DFD5] bg-[#FAF7F2] px-3 py-2">
+              <option value="景點">景點</option>
+              <option value="餐廳">餐廳</option>
+              <option value="逛街">逛街</option>
+              <option value="素食">素食</option>
+              <option value="點心">點心</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-[#6E6862] mb-1">所屬拜會區域 *</label>
+            <select id="spot-day-group" required class="w-full rounded-xl border border-[#E6DFD5] bg-[#FAF7F2] px-3 py-2">
+              <option value="yotsuya">四谷・平河町</option>
+              <option value="honancho">方南町</option>
+              <option value="otemachi">大手町・東京站</option>
+              <option value="oshiage">押上・錦糸町</option>
+              <option value="akasaka">赤坂</option>
+              <option value="kanazawa">金澤</option>
+              <option value="nanao">七尾・能登</option>
+              <option value="ueno">上野</option>
+            </select>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-bold text-[#6E6862] mb-1">區域標籤 *</label>
+            <input type="text" id="spot-area" required placeholder="例如：四谷、金澤、上野" class="w-full rounded-xl border border-[#E6DFD5] bg-[#FAF7F2] px-3 py-2" />
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-[#6E6862] mb-1">餐點種類／特色 *</label>
+            <input type="text" id="spot-tag" required placeholder="例如：海鮮丼、純素擔擔麵" class="w-full rounded-xl border border-[#E6DFD5] bg-[#FAF7F2] px-3 py-2" />
+          </div>
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-[#6E6862] mb-1">簡短推薦理由 *</label>
+          <textarea id="spot-desc" rows="2" required placeholder="例如：距拜會地點步行 5 分鐘..." class="w-full rounded-xl border border-[#E6DFD5] bg-[#FAF7F2] px-3 py-2"></textarea>
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-[#6E6862] mb-1">Google Maps 連結（選填）</label>
+          <input type="url" id="spot-map-url" placeholder="留空將自動依名稱產生導航連結" class="w-full rounded-xl border border-[#E6DFD5] bg-[#FAF7F2] px-3 py-2" />
+        </div>
+        <div class="flex justify-end gap-2 pt-2">
+          <button type="button" onclick="closeModal('modal-spot')" class="px-4 py-2.5 rounded-xl bg-[#FAF7F2] text-[#6E6862] font-bold">取消</button>
+          <button type="submit" class="px-5 py-2.5 rounded-xl bg-[#C68B6B] text-white font-bold hover:bg-[#B27757]">加入清單</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==================== 彈窗：新增／編輯團員 ==================== -->
+  <div id="modal-member" class="fixed inset-0 z-50 hidden items-center justify-center bg-[#363330]/50 backdrop-blur-xs p-4">
+    <div class="bg-[#FFFDF9] rounded-2xl border border-[#E6DFD5] w-full max-w-md shadow-2xl overflow-hidden">
+      <div class="px-5 py-4 border-b border-[#E6DFD5] flex items-center justify-between">
+        <h3 id="modal-member-title" class="font-bold text-base text-[#363330]">編輯團員資訊</h3>
+        <button onclick="closeModal('modal-member')" class="p-1.5 rounded-lg text-[#6E6862] hover:bg-[#FAF7F2]">✕</button>
+      </div>
+      <form id="form-member" onsubmit="saveMemberItem(event)" class="p-5 space-y-3.5 text-sm">
+        <input type="hidden" id="member-id" />
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-bold text-[#6E6862] mb-1">中文姓名 *</label>
+            <input type="text" id="member-name" required placeholder="例如：邱景祥" class="w-full rounded-xl border border-[#E6DFD5] bg-[#FAF7F2] px-3 py-2" />
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-[#6E6862] mb-1">英文姓名（選填）</label>
+            <input type="text" id="member-en" placeholder="Chiu Ching-Hsiang" class="w-full rounded-xl border border-[#E6DFD5] bg-[#FAF7F2] px-3 py-2" />
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-bold text-[#6E6862] mb-1">頭銜徽章 *</label>
+            <input type="text" id="member-badge" required placeholder="例如：團長、科長、口譯" class="w-full rounded-xl border border-[#E6DFD5] bg-[#FAF7F2] px-3 py-2" />
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-[#6E6862] mb-1">卡片主題色</label>
+            <select id="member-theme" class="w-full rounded-xl border border-[#E6DFD5] bg-[#FAF7F2] px-3 py-2">
+              <option value="blue">霧霾藍</option>
+              <option value="sage">鼠尾草綠</option>
+              <option value="rose">乾燥玫瑰粉</option>
+              <option value="purple">薰衣草霧紫</option>
+              <option value="clay">暖杏陶土橘</option>
+              <option value="gold">燕麥芥末金</option>
+              <option value="teal">湖水青灰</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-[#6E6862] mb-1">單位與職稱 *</label>
+          <input type="text" id="member-role" required placeholder="例如：災害管理組 組長（團長）" class="w-full rounded-xl border border-[#E6DFD5] bg-[#FAF7F2] px-3 py-2" />
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-bold text-[#6E6862] mb-1">聯絡電話／LINE</label>
+            <input type="text" id="member-phone" placeholder="點擊填寫手機或 LINE" class="w-full rounded-xl border border-[#E6DFD5] bg-[#FAF7F2] px-3 py-2" />
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-[#6E6862] mb-1">房號／分房</label>
+            <input type="text" id="member-room" placeholder="例如：單人房" class="w-full rounded-xl border border-[#E6DFD5] bg-[#FAF7F2] px-3 py-2" />
+          </div>
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-[#6E6862] mb-1">飲食／個人備註</label>
+          <input type="text" id="member-diet" placeholder="例如：不吃牛、過敏提醒或分工備註" class="w-full rounded-xl border border-[#E6DFD5] bg-[#FAF7F2] px-3 py-2" />
+        </div>
+        <div class="flex justify-end gap-2 pt-2">
+          <button type="button" onclick="closeModal('modal-member')" class="px-4 py-2.5 rounded-xl bg-[#FAF7F2] text-[#6E6862] font-bold">取消</button>
+          <button type="submit" class="px-5 py-2.5 rounded-xl bg-[#8E82A1] text-white font-bold hover:bg-[#7A6E8D]">儲存團員</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==================== 彈窗：匯入 JSON 資料 ==================== -->
+  <div id="modal-import" class="fixed inset-0 z-50 hidden items-center justify-center bg-[#363330]/50 backdrop-blur-xs p-4">
+    <div class="bg-[#FFFDF9] rounded-2xl border border-[#E6DFD5] w-full max-w-md shadow-2xl overflow-hidden">
+      <div class="px-5 py-4 border-b border-[#E6DFD5] flex items-center justify-between">
+        <h3 class="font-bold text-base text-[#363330]">匯入旅伴分享的行程資料</h3>
+        <button onclick="closeModal('modal-import')" class="p-1.5 rounded-lg text-[#6E6862] hover:bg-[#FAF7F2]">✕</button>
+      </div>
+      <div class="p-5 space-y-3 text-sm">
+        <p class="text-xs text-[#6E6862]">請貼上旅伴複製的 JSON 內容，確認後即可同步最新行程、景點、團員與送禮進度。</p>
+        <textarea id="import-json-text" rows="6" placeholder='{"itinerary": [...], ...}' class="w-full rounded-xl border border-[#E6DFD5] bg-[#FAF7F2] p-3 text-xs font-mono focus:outline-none focus:border-[#8E82A1]"></textarea>
+        <div class="flex justify-end gap-2">
+          <button type="button" onclick="closeModal('modal-import')" class="px-4 py-2.5 rounded-xl bg-[#FAF7F2] text-[#6E6862] font-bold">取消</button>
+          <button type="button" onclick="applyImportData()" class="px-5 py-2.5 rounded-xl bg-[#8E82A1] text-white font-bold hover:bg-[#7A6E8D]">確認匯入</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== 自訂確認框（無原生 confirm） ==================== -->
+  <div id="modal-confirm" class="fixed inset-0 z-50 hidden items-center justify-center bg-[#363330]/50 backdrop-blur-xs p-4">
+    <div class="bg-[#FFFDF9] rounded-2xl border border-[#E6DFD5] w-full max-w-sm p-5 shadow-2xl">
+      <h3 id="confirm-title" class="font-bold text-base text-[#363330] mb-2">確認操作</h3>
+      <p id="confirm-message" class="text-sm text-[#6E6862] mb-5">確定要執行此動作嗎？</p>
+      <div class="flex justify-end gap-2">
+        <button onclick="closeConfirmModal()" class="px-4 py-2 rounded-xl bg-[#FAF7F2] text-[#6E6862] text-sm font-bold">取消</button>
+        <button id="confirm-ok-btn" class="px-4 py-2 rounded-xl bg-[#B98389] text-white text-sm font-bold hover:bg-[#A46E74]">確定</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== 全螢幕可縮放燈箱（Lightbox） ==================== -->
+  <div id="lightbox" class="fixed inset-0 z-50 hidden flex-col bg-[#242220]/95">
+    <div class="flex items-center justify-between px-4 py-3 bg-[#1C1A18]/90 border-b border-white/10 text-white z-10">
+      <div id="lightbox-title" class="font-bold text-sm sm:text-base truncate pr-3">路線圖預覽</div>
+      <div class="flex items-center gap-1.5 sm:gap-2 shrink-0">
+        <button onclick="zoomLightbox(-0.3)" class="px-3 py-1.5 rounded-lg bg-white/15 hover:bg-white/25 text-xs sm:text-sm font-bold">－ 縮小</button>
+        <button onclick="resetLightboxZoom()" id="lightbox-zoom-label" class="px-2.5 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-xs font-mono">100%</button>
+        <button onclick="zoomLightbox(0.3)" class="px-3 py-1.5 rounded-lg bg-white/15 hover:bg-white/25 text-xs sm:text-sm font-bold">＋ 放大</button>
+        <button onclick="closeLightbox()" class="ml-1 w-9 h-9 rounded-lg bg-[#B98389]/85 hover:bg-[#B98389] text-white font-bold flex items-center justify-center">✕</button>
+      </div>
+    </div>
+    <div id="lightbox-stage" class="lightbox-stage flex-1 overflow-hidden relative flex items-center justify-center cursor-grab active:cursor-grabbing">
+      <div id="lightbox-content" class="transition-transform duration-75 origin-center max-w-[95vw] max-h-[82vh] flex items-center justify-center"></div>
+    </div>
+    <div class="text-center py-2 text-[11px] text-white/65 bg-[#1C1A18]/80">
+      手機可單指拖曳平移、雙指捏合縮放；電腦可使用上方按鈕、滾輪縮放或滑鼠拖曳
+    </div>
+  </div>
+
+  <!-- ==================== 輕量提示 Toast ==================== -->
+  <div id="toast" class="fixed top-20 left-1/2 -translate-x-1/2 z-50 hidden px-4 py-2.5 rounded-xl bg-[#363330] text-[#FFFDF9] text-xs sm:text-sm font-bold shadow-lg"></div>
+
+  <!-- ==================== 應用程式邏輯 ==================== -->
+  <script>
+    /* ================================================================
+       1. 七色莫蘭迪主題色系定義
+       ================================================================ */
+    const MORANDI_THEMES = {
+      blue:   { main: '#6C879E', soft: '#EEF3F7', dark: '#465F75', border: 'rgba(108,135,158,0.35)' },
+      sage:   { main: '#789482', soft: '#EFF4F0', dark: '#4B6755', border: 'rgba(120,148,130,0.35)' },
+      rose:   { main: '#B98389', soft: '#F8EFF0', dark: '#8A5158', border: 'rgba(185,131,137,0.35)' },
+      clay:   { main: '#C68B6B', soft: '#FAF2EC', dark: '#8E593D', border: 'rgba(198,139,107,0.38)' },
+      purple: { main: '#8E82A1', soft: '#F3F0F7', dark: '#5E5270', border: 'rgba(142,130,161,0.35)' },
+      gold:   { main: '#C2A368', soft: '#F9F5EA', dark: '#856B35', border: 'rgba(194,163,104,0.40)' },
+      teal:   { main: '#639194', soft: '#ECF4F4', dark: '#3F676A', border: 'rgba(99,145,148,0.35)' }
+    };
+
+    // 分頁對應強調色
+    const TAB_THEME_MAP = {
+      itinerary: MORANDI_THEMES.sage,
+      metro:     MORANDI_THEMES.blue,
+      spots:     MORANDI_THEMES.clay,
+      team:      MORANDI_THEMES.purple
+    };
+
+    // 每日專屬莫蘭迪色（Day 1 ~ Day 7 各配一色）
+    const DAY_META = [
+      { id: '12/6',  short: 'Day 1', label: '12/6 (日)', route: '移動日・台北 → 東京四谷',           theme: MORANDI_THEMES.blue,   note: '長榮 BR198 飛抵成田，轉乘 Skyliner 入住四谷飯店連泊三晚。' },
+      { id: '12/7',  short: 'Day 2', label: '12/7 (一)', route: '東京考察 Day 1（防災士・神田川）', theme: MORANDI_THEMES.sage,   note: '上午平河町拜會防災士機構；下午 14:45 方南町站集合考察地下調節池。' },
+      { id: '12/8',  short: 'Day 3', label: '12/8 (二)', route: '東京考察 Day 2（消防廳・防災館・赤坂）', theme: MORANDI_THEMES.rose, note: '拜會東京消防廳本部、體驗本所防災館，晚間於赤坂 Tenshige 交流餐敘。' },
+      { id: '12/9',  short: 'Day 4', label: '12/9 (三)', route: '東京 → 金澤（石川縣廳）→ 七尾',     theme: MORANDI_THEMES.clay,   note: '07:20 搭乘北陸新幹線赴金澤拜會石川縣廳，下午轉乘 JR 七尾線入住七尾。' },
+      { id: '12/10', short: 'Day 5', label: '12/10 (四)', route: '輪島・能登半島震災實地勘查',        theme: MORANDI_THEMES.purple, note: '全日專屬包車實地勘查輪島朝市火災遺跡、白丸、寶立與和倉溫泉震災面貌。' },
+      { id: '12/11', short: 'Day 6', label: '12/11 (五)', route: '能登鐵道語り部列車 → 返回東京上野', theme: MORANDI_THEMES.gold,   note: '穴水站與能登鐵道社長會談並搭乘震災故事列車，下午搭新幹線返抵上野。' },
+      { id: '12/12', short: 'Day 7', label: '12/12 (六)', route: '返國日・東京上野 → 成田 → 桃園',    theme: MORANDI_THEMES.teal,   note: '11:00 京成上野搭 Skyliner 往成田機場，搭長榮 BR197 平安返抵國門。' }
+    ];
+
+    /* ================================================================
+       2. 預設資料（完整考察行程、35筆無牛推薦地點、4位正式團員、8項送禮）
+       ================================================================ */
+    const DEFAULT_ITINERARY = [
+      // 12/6 (日)
+      {
+        id: 'd1-1', day: '12/6', start: '08:50', end: '12:55',
+        transport: '航班', transportDetail: '長榮航空 BR198',
+        title: '桃園國際機場 → 成田國際機場',
+        address: '成田國際機場',
+        task: '出發移動日・調整日，辦理入境手續與領取行李。',
+        contact: '', phone: '', email: '', gifts: ''
+      },
+      {
+        id: 'd1-2', day: '12/6', start: '13:59', end: '14:43',
+        transport: '京成電鐵', transportDetail: 'Skyliner',
+        title: '成田機場 → 日暮里／上野轉乘至四谷',
+        address: 'JR 四谷駅',
+        task: '搭乘京成電鐵 Skyliner 進入東京市區，轉乘前往飯店辦理入住。',
+        contact: '', phone: '', email: '', gifts: ''
+      },
+      {
+        id: 'd1-3', day: '12/6', start: '16:00', end: '17:00',
+        transport: '入住飯店', transportDetail: '東京連泊三晚（12/6–12/9）',
+        title: '入住 ホテル京阪 東京四谷',
+        address: '〒160-0004 東京都新宿区四谷1丁目24',
+        task: '辦理飯店入住手續、休整與確認隔日考察裝備與禮品。',
+        contact: '', phone: '', email: '', gifts: ''
+      },
+      // 12/7 (一)
+      {
+        id: 'd2-1', day: '12/7', start: '上午', end: '確認中',
+        transport: '東京地鐵', transportDetail: '東京地鐵／步行',
+        title: '拜會日本防災士研修中心、防災士機構、日本防災士協會',
+        address: '〒102-0093 東京都千代田区平河町2-7-4 砂防会館別館7階',
+        task: '拜會日本防災士研修中心、防災士機構與日本防災士協會，交流防災士培訓與推廣機制。',
+        contact: '大綺部長', phone: '', email: '',
+        gifts: '套幣、臂章數枚（3套）、小鳳梨酥3（大綺、岩澤、玉田）'
+      },
+      {
+        id: 'd2-2', day: '12/7', start: '14:45', end: '16:00',
+        transport: '東京地鐵', transportDetail: '丸之內線（方南町站1號出口步行10分）',
+        title: '考察神田川・環狀七號線地下調節池（善福寺川取水設施管理棟 1樓會議室）',
+        address: '東京都杉並區堀之內 2-1-1',
+        task: '【集合提醒】14:45 於方南町站剪票口集合。考察極端氣候都市防災韌性：參訪大規模地下滯洪設施。與會：牛嶋 築 危機管理監、前田 泰伯 復興擔當部長。',
+        contact: '東京都総務局総合防災部 戦略調整担当課長 尾身 亮介（内線25-740）',
+        phone: '03-5320-7602', email: 'Ryousuke_Omi@member.metro.tokyo.jp',
+        gifts: '花生糖3、茶葉2（牛嶋 築、前田 泰伯、尾身 亮介）'
+      },
+      // 12/8 (二)
+      {
+        id: 'd3-1', day: '12/8', start: '11:00', end: '11:30',
+        transport: '東京地鐵', transportDetail: '丸之內線（四谷→大手町）',
+        title: '拜會東京消防廳本部',
+        address: '100-8119 東京都千代田區大手町 1-3-5',
+        task: '幹部致意、會面交流。',
+        contact: '東京消防庁 総務課国際業務係 佐伯（内線2587）',
+        phone: '03-3212-2111', email: 'tfd-iab-258@tfd.metro.tokyo.jp',
+        gifts: '主：大鳳梨酥、茶葉；佐伯：花生糖'
+      },
+      {
+        id: 'd3-2', day: '12/8', start: '15:00', end: '16:45',
+        transport: '東京地鐵', transportDetail: '半藏門線（大手町→錦糸町/押上步行）',
+        title: '參訪東京防災館（本所防災館）防災體驗',
+        address: '〒130-0003 東京都墨田区横川4丁目6-6',
+        task: 'VR、地震、煙霧、防災短片體驗。',
+        contact: '', phone: '', email: '',
+        gifts: '主：花生糖、茶葉；解說員：花生糖'
+      },
+      {
+        id: 'd3-3', day: '12/8', start: '18:00', end: '20:30',
+        transport: '東京地鐵', transportDetail: '東京地鐵前往赤坂',
+        title: '晚宴餐敘 Tenshige（赤坂）',
+        address: '〒107-0052 東京都港区赤坂 3-12-10 赤坂サンビル 6階',
+        task: '與會貴賓：石川議員、岩澤先生、玉田先生。',
+        contact: '', phone: '', email: '',
+        gifts: '石川：威士忌、花生糖；岩澤：威士忌、花生糖；玉田：茶葉禮盒、花生糖'
+      },
+      // 12/9 (三)
+      {
+        id: 'd4-1', day: '12/9', start: '06:45', end: '07:20',
+        transport: 'JR鐵路', transportDetail: 'JR中央線',
+        title: '飯店出發前往東京車站',
+        address: 'JR 東京駅',
+        task: '自ホテル京阪東京四谷退房出發，前往東京車站準備搭乘北陸新幹線。',
+        contact: '', phone: '', email: '', gifts: ''
+      },
+      {
+        id: 'd4-2', day: '12/9', start: '07:20', end: '09:44',
+        transport: '北陸新幹線', transportDetail: '北陸新幹線（東京→金澤）',
+        title: '東京站 → 金澤站',
+        address: 'JR 金澤駅',
+        task: '搭乘北陸新幹線途程移動前往石川縣金澤市。',
+        contact: '', phone: '', email: '', gifts: ''
+      },
+      {
+        id: 'd4-3', day: '12/9', start: '10:30', end: '11:30',
+        transport: '計程車/公車', transportDetail: '計程車／市區公車',
+        title: '拜會石川縣廳・業務說明（19樓設有展望台）',
+        address: '〒920-8580 石川県金沢市鞍月1丁目1番地',
+        task: '向石川縣危機管理部長致意（約5分鐘）、職員情況說明及意見交流（約30-40分鐘），由危機管理政策課長主持。會後可順道參觀19樓免費展望台。',
+        contact: '石川縣危機管理政策課 地區防災推進組 主任 淺見和希（分機4232）',
+        phone: '076-225-1488', email: '',
+        gifts: '套幣、大鳳梨酥、茶葉；淺見：花生糖'
+      },
+      {
+        id: 'd4-4', day: '12/9', start: '下午', end: '傍晚',
+        transport: 'JR鐵路', transportDetail: 'JR七尾線',
+        title: '金澤站 → 七尾站・入住 ホテルルートイン七尾駅東',
+        address: '七尾市本府中町ハ31-1, 926-0021',
+        task: '轉乘 JR 七尾線前往七尾，入住 Hotel Route Inn Nanao Ekihigashi（連泊兩晚 12/9–12/11）。',
+        contact: '', phone: '', email: '', gifts: ''
+      },
+      // 12/10 (四)
+      {
+        id: 'd5-1', day: '12/10', start: '09:00', end: '17:00',
+        transport: '專屬包車', transportDetail: '包車（森崎伸二郎）',
+        title: '能登半島震災實地勘查',
+        address: '石川県輪島市・能登町白丸・珠洲市寶立・七尾市和倉溫泉',
+        task: '實地勘查輪島市朝市火災遺跡、白丸地區、寶立地區、和倉溫泉等震災面貌與復原情形。',
+        contact: '森崎伸二郎（包車公司）', phone: '', email: '',
+        gifts: '花生糖2'
+      },
+      // 12/11 (五)
+      {
+        id: 'd6-1', day: '12/11', start: '10:00', end: '13:00',
+        transport: '能登鐵道', transportDetail: '普通列車601D ＋ 震災語り部列車2號',
+        title: '搭乘能登鐵道「震災語り部列車」與社長會談',
+        address: '石川県鳳珠郡穴水町字大町 穴水駅',
+        task: '去程：普通列車 601D 七尾 10:00 → 穴水 10:45；穴水站社長談話 約 11:00–11:50；回程：震災故事講述觀光列車 2 號 穴水 12:09 → 七尾 12:54，實境了解宣導與應變機制。',
+        contact: '能登鐵道株式會社 東井 豊記 先生',
+        phone: '0768-52-0900', email: 'notoryo@po.incl.ne.jp',
+        gifts: '社長：茶葉、小鳳梨酥；東井：小鳳梨酥'
+      },
+      {
+        id: 'd6-2', day: '12/11', start: '下午', end: '晚間',
+        transport: '北陸新幹線', transportDetail: 'JR七尾線 ＋ 北陸新幹線',
+        title: '七尾 → 金澤 → 東京上野（入住 APA Hotel Ueno Ekiminami）',
+        address: '〒110-0005 東京都台東区上野6-7-21',
+        task: '自七尾返回金澤轉搭北陸新幹線回到東京，辦理入住 APA Hotel Ueno Ekiminami。',
+        contact: '', phone: '', email: '', gifts: ''
+      },
+      // 12/12 (六)
+      {
+        id: 'd7-1', day: '12/12', start: '11:00', end: '11:43',
+        transport: '京成電鐵', transportDetail: 'Skyliner',
+        title: '京成上野站 → 成田國際機場',
+        address: '京成上野駅',
+        task: '前往成田國際機場辦理登機報到與託運。',
+        contact: '', phone: '', email: '', gifts: ''
+      },
+      {
+        id: 'd7-2', day: '12/12', start: '14:00', end: '17:05',
+        transport: '航班', transportDetail: '長榮航空 BR197',
+        title: '成田國際機場 → 桃園國際機場',
+        address: '桃園國際機場',
+        task: '平安返抵國門，圓滿結束考察行程。',
+        contact: '', phone: '', email: '', gifts: ''
+      }
+    ];
+
+    // 35 個真實貼近每日拜會路線之精選地點（全數避開牛肉料理）
+    const DEFAULT_SPOTS = [
+      // 1. 四谷・平河町（飯店／防災士機構）
+      { id: 's1', name: '迎賓館赤坂離宮', category: '景點', dayGroup: 'yotsuya', area: '四谷', tag: '國寶建築・庭園', desc: '距京阪東京四谷飯店步行約 7 分鐘，明治時期新巴洛克式國賓館，壯麗典雅。', mapUrl: '' },
+      { id: 's2', name: '須賀神社', category: '景點', dayGroup: 'yotsuya', area: '四谷', tag: '電影名景・神社', desc: '距四谷飯店步行約 8 分鐘，《你的名字》經典階梯取景地，清晨散步氣氛清幽。', mapUrl: '' },
+      { id: 's3', name: 'かつれつ四谷たけだ', category: '餐廳', dayGroup: 'yotsuya', area: '四谷', tag: '炸豬排・洋食', desc: '四谷車站旁超人氣洋食排隊名店，招牌酥脆炸豬排與冬季限定奶油牡蠣燒必嚐。', mapUrl: '' },
+      { id: 's4', name: 'たいやき わかば（若葉鯛魚燒）', category: '點心', dayGroup: 'yotsuya', area: '四谷', tag: '東京三大鯛魚燒', desc: '距四谷飯店步行約 5 分鐘，手工薄脆外皮配上微鹹綿密紅豆餡，現烤香氣四溢。', mapUrl: '' },
+      { id: 's5', name: '四谷三丁目居酒屋街（荒木町）', category: '餐廳', dayGroup: 'yotsuya', area: '四谷', tag: '海鮮・燒鳥居酒屋', desc: '保留昭和石板小巷風情的美食聚落，藏有眾多高評價魚料理與炭火燒鳥小店。', mapUrl: '' },
+      { id: 's6', name: '麹町カフェ Kojimachi Cafe', category: '素食', dayGroup: 'yotsuya', area: '平河町・麴町', tag: '蔬食友善・輕食', desc: '距平河町砂防會館步行約 6 分鐘，主打當季有機蔬菜沙拉、天然酵母麵包與蔬食餐盤。', mapUrl: '' },
+
+      // 2. 方南町（神田川調節池）
+      { id: 's7', name: '大宮八幡宮', category: '景點', dayGroup: 'honancho', area: '方南町', tag: '東京肚臍・千年古社', desc: '鄰近善福寺川取水設施，被稱為「東京中心點」的千年神社，參道古木參天。', mapUrl: '' },
+      { id: 's8', name: '和田堀公園（善福寺川綠地）', category: '景點', dayGroup: 'honancho', area: '方南町', tag: '河岸綠地・生態散策', desc: '緊鄰神田川・善福寺川流域，考察完地下調節池後可順道感受東京親水防災公園設計。', mapUrl: '' },
+      { id: 's9', name: '方南町在地手打蕎麥麵・拉麵小館', category: '餐廳', dayGroup: 'honancho', area: '方南町', tag: '雞白湯拉麵・蕎麥麵', desc: '方南町站周邊聚集多家在地人喜愛的柴魚高湯蕎麥麵與清澈雞湯拉麵，溫暖飽足。', mapUrl: '' },
+      { id: 's10', name: '方南町商店街手工烘焙點心店', category: '點心', dayGroup: 'honancho', area: '方南町', tag: '手作麵包・洋菓子', desc: '1 號出口周邊庶民商店街中的人氣烘焙坊，適合考察前後買份手工點心解饞。', mapUrl: '' },
+
+      // 3. 大手町・東京站（東京消防廳）
+      { id: 's11', name: '皇居東御苑', category: '景點', dayGroup: 'otemachi', area: '大手町', tag: '江戶城遺跡・庭園', desc: '就在東京消防廳本部對面步行 3 分鐘，免費入場的日式庭園與天守台遺跡。', mapUrl: '' },
+      { id: 's12', name: '丸之內仲通', category: '逛街', dayGroup: 'otemachi', area: '大手町・丸之內', tag: '冬季點燈・精品散策', desc: '12 月正好進入香檳金冬季點燈季，街道寬敞優雅，匯聚質感選物店與咖啡館。', mapUrl: '' },
+      { id: 's13', name: 'KITTE 丸之內', category: '逛街', dayGroup: 'otemachi', area: '東京站', tag: '日本工藝選物・屋頂花園', desc: '隈研吾改建舊東京中央郵局而成，館內精選日本各地職人工藝，6 樓可免費眺望東京車站。', mapUrl: '' },
+      { id: 's14', name: "T's たんたん 東京站店", category: '素食', dayGroup: 'otemachi', area: '東京站', tag: '人氣全素擔擔麵', desc: '位於東京車站京葉線通道內，不含肉魚蛋奶卻香濃醇厚的全素芝麻擔擔麵，口碑極佳。', mapUrl: '' },
+      { id: 's15', name: '東京車站一番街', category: '逛街', dayGroup: 'otemachi', area: '東京站', tag: '伴手禮・動漫雜貨', desc: '一站買齊東京限定伴手禮、角色專賣店與人氣甜點，室內連通不怕冬日寒風。', mapUrl: '' },
+
+      // 4. 押上・錦糸町（本所防災館）
+      { id: 's16', name: '東京晴空塔 & Solamachi 晴空街道', category: '逛街', dayGroup: 'oshiage', area: '押上', tag: '300+店舖・地標展望', desc: '距本所防災館步行約 12 分鐘，參訪完畢後可順遊超大型商場與日本特色伴手禮街。', mapUrl: '' },
+      { id: 's17', name: '墨田水族館', category: '景點', dayGroup: 'oshiage', area: '押上', tag: '室內療癒水族館', desc: '位於晴空街道 5–6 樓，以水母萬花筒與近距離企鵝大水槽聞名，動線舒適不累腳。', mapUrl: '' },
+      { id: 's18', name: '本所吾妻橋甜點咖啡館（船橋屋／職人咖啡）', category: '點心', dayGroup: 'oshiage', area: '本所・押上', tag: '葛餅・手沖咖啡', desc: '本所防災館步行範圍內充滿下町文青咖啡與老舖和菓子，適合下午茶歇腳。', mapUrl: '' },
+      { id: 's19', name: '錦糸町站周邊炸豬排／海鮮定食', category: '餐廳', dayGroup: 'oshiage', area: '錦糸町', tag: '日式炸豬排・海鮮定食', desc: '錦糸町站南口與北口餐廳林立，有多家職人現炸厚切豬排與當季鮮魚定食名店。', mapUrl: '' },
+
+      // 5. 赤坂（晚宴周邊）
+      { id: 's20', name: '赤坂日枝神社', category: '景點', dayGroup: 'akasaka', area: '赤坂', tag: '千本鳥居・手扶梯神社', desc: '距 Tenshige 步行約 6 分鐘，設有貼心戶外手扶梯與壯觀的稻荷朱紅鳥居。', mapUrl: '' },
+      { id: 's21', name: '赤坂 Sacas（赤坂Biz塔樓）', category: '逛街', dayGroup: 'akasaka', area: '赤坂', tag: '商場廣場・TBS周邊', desc: '赤坂站直結的現代複合廣場，晚宴前後可輕鬆逛逛主題商店與冬日裝飾。', mapUrl: '' },
+      { id: 's22', name: '赤坂青野（赤坂本店）', category: '點心', dayGroup: 'akasaka', area: '赤坂', tag: '百年和菓子・赤坂麻糬', desc: '明治 32 年創業的老字號和菓子舖，招牌黑糖黃豆粉「赤坂もち」是最具代表性的伴手禮。', mapUrl: '' },
+      { id: 's23', name: '赤坂海鮮居酒屋聚落', category: '餐廳', dayGroup: 'akasaka', area: '赤坂', tag: '漁港直送海鮮・燒鳥', desc: '赤坂見附至赤坂站巷弄間匯聚眾多高品質海鮮爐端燒與地雞燒鳥居酒屋。', mapUrl: '' },
+
+      // 6. 金澤（石川縣廳周邊）
+      { id: 's24', name: '兼六園', category: '景點', dayGroup: 'kanazawa', area: '金澤', tag: '日本三大名園・冬季雪吊', desc: '12 月正好欣賞經典冬季「雪吊」景觀，迴遊式池泉庭園與古松景致令人難忘。', mapUrl: '' },
+      { id: 's25', name: '近江町市場（海鮮丼）', category: '餐廳', dayGroup: 'kanazawa', area: '金澤', tag: '北陸海鮮丼・甜蝦寒鰤', desc: '「金澤的廚房」，冬季必嚐肥美寒鰤魚、加能蟹、北陸甜蝦與現點現切豪華海鮮丼。', mapUrl: '' },
+      { id: 's26', name: '東茶屋街', category: '景點', dayGroup: 'kanazawa', area: '金澤', tag: '江戶茶屋老街・工藝', desc: '典雅木格建築群林立，可漫步選購九谷燒瓷器、加賀友禪與金箔工藝品。', mapUrl: '' },
+      { id: 's27', name: '金澤百番街 Rinto / Anto', category: '逛街', dayGroup: 'kanazawa', area: '金澤車站', tag: '北陸伴手禮・時尚選物', desc: '金澤站直結，轉乘 JR 七尾線空檔即可一次買齊加賀棒茶、能登鹽點心與金澤銘菓。', mapUrl: '' },
+      { id: 's28', name: '金澤精進料理・加賀野菜蔬食咖啡', category: '素食', dayGroup: 'kanazawa', area: '金澤', tag: '加賀野菜・精進蔬食', desc: '運用石川在地加賀蓮根、金時草等傳統野菜烹調的健康蔬食定食，清甜無負擔。', mapUrl: '' },
+      { id: 's29', name: '箔一 東山店（金箔霜淇淋）', category: '點心', dayGroup: 'kanazawa', area: '金澤', tag: '整片金箔霜淇淋', desc: '霸氣覆蓋一整張金澤食用金箔的濃郁鮮奶霜淇淋，視覺華麗、拍照打卡首選。', mapUrl: '' },
+
+      // 7. 七尾・能登（震災勘查）
+      { id: 's30', name: '能登食祭市場', category: '餐廳', dayGroup: 'nanao', area: '七尾', tag: '能登牡蠣燒烤・海產市場', desc: '距七尾飯店步行約 10 分鐘，面海市場可現烤能登新鮮牡蠣、一夜干並採買在地特產。', mapUrl: '' },
+      { id: 's31', name: '和倉溫泉 總湯與海濱足湯', category: '景點', dayGroup: 'nanao', area: '和倉溫泉', tag: '千年臨海溫泉・足湯', desc: '眺望七尾灣的療癒海濱溫泉，勘查行程後泡湯暖身，同時以行動支持在地觀光復興。', mapUrl: '' },
+      { id: 's32', name: '辻口博啟美術館 Le Musée de H', category: '點心', dayGroup: 'nanao', area: '和倉溫泉', tag: '名廚法式甜點・海景茶室', desc: '七尾出身的世界級甜點大師所設，邊賞七尾灣海景邊品嚐以能登食材打造的精緻蛋糕。', mapUrl: '' },
+      { id: 's33', name: '一本杉通商店街', category: '景點', dayGroup: 'nanao', area: '七尾', tag: '百年老街・花嫁暖簾', desc: '擁有六百多年歷史的七尾老街，可欣賞傳統和蠟燭、醬油老舖與北陸花嫁暖簾文化。', mapUrl: '' },
+      { id: 's34', name: '能登海鮮食堂（七尾站周邊）', category: '餐廳', dayGroup: 'nanao', area: '七尾', tag: '能登地魚握壽司・海鮮定食', desc: '主打七尾灣當日現撈漁獲的道地壽司與烤魚定食，魚肉鮮甜厚實、價格親民。', mapUrl: '' },
+
+      // 8. 上野（最後一晚）
+      { id: 's35', name: '阿美橫丁商店街', category: '逛街', dayGroup: 'ueno', area: '上野', tag: '藥妝・零食・平價採買', desc: '距 APA Hotel 上野站南步行僅 3 分鐘！回國前最後衝刺藥妝、二木菓子零食必逛。', mapUrl: '' },
+      { id: 's36', name: '上野恩賜公園', category: '景點', dayGroup: 'ueno', area: '上野', tag: '文化公園・世界遺產美術館', desc: '搭 Skyliner 前可悠閒散步，沿途有國立西洋美術館、不忍池與冬日靜謐林蔭。', mapUrl: '' },
+      { id: 's37', name: '上野松坂屋 & PARCO_ya', category: '逛街', dayGroup: 'ueno', area: '上野', tag: '質感百貨・伴手禮專櫃', desc: '環境寬敞舒適的現代商場與老字號百貨，適合優雅採買精緻日本禮盒與服飾雜貨。', mapUrl: '' },
+      { id: 's38', name: '鴨to蔥 上野御徒町本店', category: '餐廳', dayGroup: 'ueno', area: '上野', tag: '清澈鴨肉拉麵', desc: '距上野飯店步行約 4 分鐘，僅以合鴨、嚴選蔥與水慢熬而成的鮮甜清湯拉麵，人氣必排。', mapUrl: '' },
+      { id: 's39', name: '餡蜜 みはし（上野本店）', category: '點心', dayGroup: 'ueno', area: '上野', tag: '昭和老舖紅豆餡蜜', desc: '昭和 23 年創業的東京甘味名店，招牌白玉紅豆餡蜜與抹茶冰淇淋甜而不膩。', mapUrl: '' },
+      { id: 's40', name: '韻松亭（上野公園豆腐・蔬食懷石）', category: '素食', dayGroup: 'ueno', area: '上野', tag: '手工豆腐・蔬食懷石', desc: '明治時期創立於上野公園內的木造老舖，主打自製豆腐、豆皮與當季野菜精進料理。', mapUrl: '' }
+    ];
+
+    // 四位正式團員名冊（各配專屬莫蘭迪主題色）
+    const DEFAULT_MEMBERS = [
+      {
+        id: 'm1',
+        name: '邱景祥',
+        enName: 'Chiu Ching-Hsiang',
+        badge: '團長',
+        role: '災害管理組 組長（團長）',
+        theme: 'blue',
+        phone: '',
+        room: '',
+        diet: '點擊「編輯」可補充手機、房號與飲食備註'
+      },
+      {
+        id: 'm2',
+        name: '許書銘',
+        enName: 'Hsu Shu-Ming',
+        badge: '科長',
+        role: '災害管理組 科長',
+        theme: 'sage',
+        phone: '',
+        room: '',
+        diet: '點擊「編輯」可補充手機、房號與飲食備註'
+      },
+      {
+        id: 'm3',
+        name: '蘇筱琁',
+        enName: 'Su Hsiao-Hsuan',
+        badge: '視察',
+        role: '災害管理組 視察',
+        theme: 'rose',
+        phone: '',
+        room: '',
+        diet: '點擊「編輯」可補充手機、房號與飲食備註'
+      },
+      {
+        id: 'm4',
+        name: '陳文慧老師',
+        enName: 'Japanese Interpreter',
+        badge: '口譯',
+        role: '日語口譯員',
+        theme: 'purple',
+        phone: '',
+        room: '',
+        diet: '點擊「編輯」可補充手機、房號與聯繫備註'
+      }
+    ];
+
+    // 拜會送禮總數量清點表（完整 8 項）
+    const DEFAULT_GIFTS = [
+      { id: 'g1', name: '套幣',         qty: '預計 6（保守 7）', checked: false },
+      { id: 'g2', name: '臂章',         qty: '數枚（3 套）',     checked: false },
+      { id: 'g3', name: '小鳳梨酥',     qty: '預計 4（保守 6）', checked: false },
+      { id: 'g4', name: '大鳳梨酥',     qty: '預計 2（保守 2）', checked: false },
+      { id: 'g5', name: '茶葉',         qty: '預計 6（保守 7）', checked: false },
+      { id: 'g6', name: '玉田茶葉禮盒', qty: '預計 1（保守 1）', checked: false },
+      { id: 'g7', name: '威士忌酒類',   qty: '預計 2（保守 2）', checked: false },
+      { id: 'g8', name: '花生糖',       qty: '預計 12（保守 12）', checked: false }
+    ];
+
+    /* ================================================================
+       3. 狀態與 LocalStorage 管理
+       ================================================================ */
+    const STORAGE_KEY = 'morandi_disaster_trip_2026_v2';
+
+    let appState = {
+      activeTab: 'itinerary',
+      selectedDay: 'all',
+      spotCategory: '全部',
+      spotDayGroup: 'all',
+      itinerary: [],
+      customMaps: [],
+      spots: [],
+      members: [],
+      gifts: []
+    };
+
+    function loadState() {
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        if (raw) {
+          const parsed = JSON.parse(raw);
+          appState.itinerary  = Array.isArray(parsed.itinerary) && parsed.itinerary.length ? parsed.itinerary : JSON.parse(JSON.stringify(DEFAULT_ITINERARY));
+          appState.customMaps = Array.isArray(parsed.customMaps) ? parsed.customMaps : [];
+          appState.spots      = Array.isArray(parsed.spots) && parsed.spots.length ? parsed.spots : JSON.parse(JSON.stringify(DEFAULT_SPOTS));
+          appState.members    = Array.isArray(parsed.members) && parsed.members.length ? parsed.members : JSON.parse(JSON.stringify(DEFAULT_MEMBERS));
+          appState.gifts      = Array.isArray(parsed.gifts) && parsed.gifts.length ? parsed.gifts : JSON.parse(JSON.stringify(DEFAULT_GIFTS));
+          return;
+        }
+      } catch (e) {
+        console.warn('讀取本機資料失敗，改用預設資料', e);
+      }
+      appState.itinerary  = JSON.parse(JSON.stringify(DEFAULT_ITINERARY));
+      appState.customMaps = [];
+      appState.spots      = JSON.parse(JSON.stringify(DEFAULT_SPOTS));
+      appState.members    = JSON.parse(JSON.stringify(DEFAULT_MEMBERS));
+      appState.gifts      = JSON.parse(JSON.stringify(DEFAULT_GIFTS));
+    }
+
+    function saveState() {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify({
+          itinerary: appState.itinerary,
+          customMaps: appState.customMaps,
+          spots: appState.spots,
+          members: appState.members,
+          gifts: appState.gifts
+        }));
+      } catch (e) {
+        showToast('瀏覽器儲存空間不足，建議移除部分較大的自訂圖片');
+      }
+    }
+
+    /* ================================================================
+       4. 通用工具函式
+       ================================================================ */
+    function esc(str) {
+      if (!str) return '';
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+    }
+
+    function getMapsUrl(query, customUrl) {
+      if (customUrl && customUrl.trim()) return customUrl.trim();
+      return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
+    }
+
+    let toastTimer = null;
+    function showToast(msg) {
+      const el = document.getElementById('toast');
+      el.textContent = msg;
+      el.classList.remove('hidden');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => el.classList.add('hidden'), 2600);
+    }
+
+    function openModal(id) {
+      const el = document.getElementById(id);
+      el.classList.remove('hidden');
+      el.classList.add('flex');
+    }
+    function closeModal(id) {
+      const el = document.getElementById(id);
+      el.classList.add('hidden');
+      el.classList.remove('flex');
+    }
+
+    let confirmCallback = null;
+    function showConfirm(title, message, onConfirm) {
+      document.getElementById('confirm-title').textContent = title;
+      document.getElementById('confirm-message').textContent = message;
+      confirmCallback = onConfirm;
+      openModal('modal-confirm');
+    }
+    function closeConfirmModal() {
+      confirmCallback = null;
+      closeModal('modal-confirm');
+    }
+    document.getElementById('confirm-ok-btn').addEventListener('click', () => {
+      if (typeof confirmCallback === 'function') confirmCallback();
+      closeConfirmModal();
+    });
+
+    /* ================================================================
+       5. 分頁切換（隨分頁切換動態變換莫蘭迪強調色）
+       ================================================================ */
+    function switchTab(tabId) {
+      appState.activeTab = tabId;
+      document.querySelectorAll('.tab-panel').forEach(p => p.classList.add('hidden'));
+      const target = document.getElementById(`tab-${tabId}`);
+      if (target) target.classList.remove('hidden');
+
+      const activeTheme = TAB_THEME_MAP[tabId] || MORANDI_THEMES.sage;
+
+      // 更新頂部手冊圖示盒色彩
+      const iconBox = document.getElementById('header-icon-box');
+      if (iconBox) {
+        iconBox.style.backgroundColor = activeTheme.soft;
+        iconBox.style.borderColor = activeTheme.border;
+        iconBox.style.color = activeTheme.dark;
+      }
+
+      // 更新桌機版書籤按鈕
+      document.querySelectorAll('.nav-btn-desktop').forEach(btn => {
+        const isActive = btn.dataset.tab === tabId;
+        const btnTheme = TAB_THEME_MAP[btn.dataset.tab] || MORANDI_THEMES.sage;
+        if (isActive) {
+          btn.style.backgroundColor = btnTheme.main;
+          btn.style.color = '#FFFFFF';
+          btn.style.boxShadow = '0 2px 8px rgba(54,51,48,0.12)';
+          const dot = btn.querySelector('span:first-child');
+          if (dot) dot.style.backgroundColor = '#FFFFFF';
+        } else {
+          btn.style.backgroundColor = 'transparent';
+          btn.style.color = '#6E6862';
+          btn.style.boxShadow = 'none';
+          const dot = btn.querySelector('span:first-child');
+          if (dot) dot.style.backgroundColor = btnTheme.main;
+        }
+      });
+
+      // 更新手機版底部導覽按鈕
+      document.querySelectorAll('.nav-btn-mobile').forEach(btn => {
+        const isActive = btn.dataset.tab === tabId;
+        const btnTheme = TAB_THEME_MAP[btn.dataset.tab] || MORANDI_THEMES.sage;
+        if (isActive) {
+          btn.style.backgroundColor = btnTheme.soft;
+          btn.style.color = btnTheme.dark;
+        } else {
+          btn.style.backgroundColor = 'transparent';
+          btn.style.color = '#857E77';
+        }
+      });
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    /* ================================================================
+       6. 分頁一：每日行程（每日專屬莫蘭迪色＋時間軸＋CRUD）
+       ================================================================ */
+    function getTransportStyle(type) {
+      const map = {
+        '航班':       { icon: '✈', bg: '#EEF3F7', text: '#465F75', border: 'rgba(108,135,158,0.35)' },
+        '京成電鐵':   { icon: '🚆', bg: '#ECF4F4', text: '#3F676A', border: 'rgba(99,145,148,0.35)' },
+        '東京地鐵':   { icon: '🚇', bg: '#F8EFF0', text: '#8A5158', border: 'rgba(185,131,137,0.35)' },
+        '北陸新幹線': { icon: '🚄', bg: '#EEF3F7', text: '#465F75', border: 'rgba(108,135,158,0.40)' },
+        'JR鐵路':     { icon: '🚃', bg: '#EFF4F0', text: '#4B6755', border: 'rgba(120,148,130,0.38)' },
+        '能登鐵道':   { icon: '🚞', bg: '#EFF4F0', text: '#4B6755', border: 'rgba(120,148,130,0.45)' },
+        '專屬包車':   { icon: '🚐', bg: '#F3F0F7', text: '#5E5270', border: 'rgba(142,130,161,0.38)' },
+        '計程車/公車':{ icon: '🚕', bg: '#FAF2EC', text: '#8E593D', border: 'rgba(198,139,107,0.38)' },
+        '入住飯店':   { icon: '🏨', bg: '#F9F5EA', text: '#856B35', border: 'rgba(194,163,104,0.40)' },
+        '步行/其他':  { icon: '🚶', bg: '#FAF7F2', text: '#6E6862', border: '#E6DFD5' }
+      };
+      return map[type] || map['步行/其他'];
+    }
+
+    function renderDayFilters() {
+      const bar = document.getElementById('day-filter-bar');
+      let html = `
+        <button onclick="selectDay('all')" style="${
+          appState.selectedDay === 'all'
+            ? 'background:#363330;color:#FFFDF9;border-color:#363330;'
+            : 'background:#FFFDF9;color:#6E6862;border-color:#E6DFD5;'
+        }" class="shrink-0 px-4 py-2 rounded-full text-xs sm:text-sm font-bold border transition shadow-xs">
+          全部 7 天
+        </button>
+      `;
+
+      DAY_META.forEach(d => {
+        const active = appState.selectedDay === d.id;
+        const styleStr = active
+          ? `background:${d.theme.main};color:#FFFFFF;border-color:${d.theme.main};`
+          : `background:${d.theme.soft};color:${d.theme.dark};border-color:${d.theme.border};`;
+        html += `
+          <button onclick="selectDay('${d.id}')" style="${styleStr}" class="shrink-0 px-3.5 py-2 rounded-full text-xs sm:text-sm font-bold border transition flex items-center gap-1.5 active:scale-95">
+            <span class="w-2 h-2 rounded-full" style="background:${active ? '#FFFFFF' : d.theme.main}"></span>
+            <span>${d.label}</span>
+          </button>
+        `;
+      });
+      bar.innerHTML = html;
+    }
+
+    function renderDaySummaryBanner() {
+      const banner = document.getElementById('day-summary-banner');
+      if (appState.selectedDay === 'all') {
+        banner.innerHTML = `
+          <div class="rounded-2xl bg-[#FFFDF9] border border-[#E6DFD5] p-4 shadow-soft flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div class="flex items-center gap-2.5">
+              <div class="flex -space-x-1">
+                ${DAY_META.map(d => `<span class="w-3.5 h-3.5 rounded-full border-2 border-white" style="background:${d.theme.main}"></span>`).join('')}
+              </div>
+              <span class="text-xs sm:text-sm font-bold text-[#363330]">7 天考察總覽（2026/12/06 – 12/12）</span>
+            </div>
+            <span class="text-xs text-[#6E6862]">點選上方任一日期膠囊，可切換單日專屬主題色檢視</span>
+          </div>
+        `;
+        return;
+      }
+
+      const meta = DAY_META.find(d => d.id === appState.selectedDay);
+      if (!meta) return;
+      const count = appState.itinerary.filter(i => i.day === meta.id).length;
+
+      banner.innerHTML = `
+        <div class="rounded-2xl p-4 sm:p-5 border shadow-soft transition-all" style="background:${meta.theme.soft};border-color:${meta.theme.border};">
+          <div class="flex flex-wrap items-center justify-between gap-2 mb-1.5">
+            <div class="flex items-center gap-2">
+              <span class="px-2.5 py-0.5 rounded-full text-xs font-bold text-white" style="background:${meta.theme.main}">${meta.short}</span>
+              <span class="font-bold text-base sm:text-lg" style="color:${meta.theme.dark}">${meta.label}｜${meta.route}</span>
+            </div>
+            <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-white/75" style="color:${meta.theme.dark}">共 ${count} 項行程</span>
+          </div>
+          <p class="text-xs sm:text-sm text-[#4A4642]">${meta.note}</p>
+        </div>
+      `;
+    }
+
+    function selectDay(dayId) {
+      appState.selectedDay = dayId;
+      renderDayFilters();
+      renderDaySummaryBanner();
+      renderItinerary();
+    }
+
+    function renderItinerary() {
+      const container = document.getElementById('itinerary-list');
+      const daysToShow = appState.selectedDay === 'all'
+        ? DAY_META
+        : DAY_META.filter(d => d.id === appState.selectedDay);
+
+      let html = '';
+      daysToShow.forEach(dayMeta => {
+        const items = appState.itinerary.filter(item => item.day === dayMeta.id);
+        const t = dayMeta.theme;
+
+        html += `
+          <div class="space-y-3.5">
+            <!-- 每日章節頁眉 -->
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-2 border-b-2" style="border-color:${t.border}">
+              <div class="flex items-center gap-2.5">
+                <span class="px-2.5 py-1 rounded-lg text-xs font-bold text-white shadow-xs" style="background:${t.main}">${dayMeta.short}</span>
+                <h3 class="font-bold text-base sm:text-lg text-[#363330]">${dayMeta.label}</h3>
+                <span class="text-xs sm:text-sm font-bold" style="color:${t.dark}">${dayMeta.route}</span>
+              </div>
+              <span class="text-xs font-bold px-2.5 py-0.5 rounded-full" style="background:${t.soft};color:${t.dark}">${items.length} 項行程</span>
+            </div>
+        `;
+
+        if (items.length === 0) {
+          html += `
+            <div class="bg-[#FFFDF9] rounded-2xl border border-dashed border-[#D8D1C7] p-6 text-center text-sm text-[#6E6862]">
+              這一天尚未安排行程，點擊上方「新增行程」即可加入。
+            </div>
+          `;
+        } else {
+          // 時間軸外框
+          html += `<div class="relative pl-5 sm:pl-6 space-y-4">`;
+          html += `<div class="absolute left-2 top-3 bottom-3 w-0.5 rounded-full" style="background:${t.border}"></div>`;
+
+          items.forEach((item, idx) => {
+            const tr = getTransportStyle(item.transport);
+            const isFirst = idx === 0;
+            const isLast = idx === items.length - 1;
+
+            html += `
+              <div class="relative">
+                <!-- 時間軸節點 -->
+                <div class="absolute -left-[21px] sm:-left-[25px] top-5 w-3.5 h-3.5 rounded-full border-2 border-[#FAF7F2] shadow-xs" style="background:${t.main}"></div>
+
+                <article class="bg-[#FFFDF9] rounded-2xl border border-[#E6DFD5] shadow-book overflow-hidden transition hover:shadow-md" style="border-left: 5px solid ${t.main};">
+                  <div class="p-4 sm:p-5">
+                    <!-- 頂部：時間、交通徽章、操作按鈕 -->
+                    <div class="flex flex-wrap items-start justify-between gap-2 mb-3">
+                      <div class="flex flex-wrap items-center gap-2">
+                        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-xl text-xs sm:text-sm font-bold border" style="background:${t.soft};color:${t.dark};border-color:${t.border};">
+                          <svg class="w-3.5 h-3.5 opacity-80" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                          ${esc(item.start)} – ${esc(item.end)}
+                        </span>
+                        <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-xl text-xs font-bold border" style="background:${tr.bg};color:${tr.text};border-color:${tr.border};">
+                          <span>${tr.icon}</span>
+                          <span>${esc(item.transport)}${item.transportDetail ? '・' + esc(item.transportDetail) : ''}</span>
+                        </span>
+                      </div>
+
+                      <!-- 調整順序／編輯／刪除 -->
+                      <div class="flex items-center gap-1">
+                        <button onclick="moveItineraryItem('${item.id}', -1)" ${isFirst ? 'disabled' : ''} class="w-7 h-7 rounded-lg border border-[#E6DFD5] text-xs font-bold text-[#6E6862] hover:bg-[#FAF7F2] disabled:opacity-30 flex items-center justify-center" title="上移">↑</button>
+                        <button onclick="moveItineraryItem('${item.id}', 1)" ${isLast ? 'disabled' : ''} class="w-7 h-7 rounded-lg border border-[#E6DFD5] text-xs font-bold text-[#6E6862] hover:bg-[#FAF7F2] disabled:opacity-30 flex items-center justify-center" title="下移">↓</button>
+                        <button onclick="openItineraryModal('${item.id}')" class="px-2.5 py-1 rounded-lg border border-[#E6DFD5] text-xs font-bold text-[#465F75] hover:bg-[#EEF3F7]">編輯</button>
+                        <button onclick="deleteItineraryItem('${item.id}')" class="px-2.5 py-1 rounded-lg border border-[#E6DFD5] text-xs font-bold text-[#8A5158] hover:bg-[#F8EFF0]">刪除</button>
+                      </div>
+                    </div>
+
+                    <!-- 標題與地址 -->
+                    <h4 class="text-base sm:text-lg font-bold text-[#363330] leading-snug">${esc(item.title)}</h4>
+                    ${item.address ? `
+                      <div class="mt-1.5 flex flex-wrap items-center gap-2 text-xs text-[#6E6862]">
+                        <span class="inline-flex items-center gap-1">
+                          <svg class="w-3.5 h-3.5 shrink-0" style="color:${t.main}" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+                          <span>${esc(item.address)}</span>
+                        </span>
+                        <a href="${getMapsUrl(item.address)}" target="_blank" rel="noopener" class="inline-flex items-center gap-0.5 px-2.5 py-0.5 rounded-lg font-bold border transition hover:opacity-90" style="background:${t.soft};color:${t.dark};border-color:${t.border};">
+                          Google Maps ↗
+                        </a>
+                      </div>
+                    ` : ''}
+
+                    <!-- 任務內容 -->
+                    ${item.task ? `
+                      <p class="mt-3 text-sm text-[#4A4642] leading-relaxed bg-[#FAF7F2] p-3 rounded-xl border border-[#EFEAE1]">
+                        ${esc(item.task)}
+                      </p>
+                    ` : ''}
+
+                    <!-- 聯絡窗口（霧霾藍）與送禮清單（暖杏陶土橘） -->
+                    ${(item.contact || item.phone || item.email || item.gifts) ? `
+                      <div class="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs">
+                        ${(item.contact || item.phone || item.email) ? `
+                          <div class="p-3 rounded-xl bg-[#EEF3F7] border border-[#6C879E]/30 space-y-1">
+                            <div class="font-bold text-[#465F75]">👤 聯絡窗口</div>
+                            ${item.contact ? `<div class="text-[#363330] font-medium">${esc(item.contact)}</div>` : ''}
+                            <div class="flex flex-wrap gap-2 pt-0.5">
+                              ${item.phone ? `<a href="tel:${esc(item.phone)}" class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-[#FFFDF9] border border-[#6C879E]/35 text-[#465F75] font-bold hover:bg-[#6C879E] hover:text-white transition">📞 ${esc(item.phone)}</a>` : ''}
+                              ${item.email ? `<a href="mailto:${esc(item.email)}" class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-[#FFFDF9] border border-[#6C879E]/35 text-[#465F75] font-bold hover:bg-[#6C879E] hover:text-white transition break-all">✉ ${esc(item.email)}</a>` : ''}
+                            </div>
+                          </div>
+                        ` : ''}
+                        ${item.gifts ? `
+                          <div class="p-3 rounded-xl bg-[#FAF2EC] border border-[#C68B6B]/35 space-y-1">
+                            <div class="font-bold text-[#8E593D]">🎁 送禮清單</div>
+                            <div class="text-[#363330] font-medium leading-relaxed">${esc(item.gifts)}</div>
+                          </div>
+                        ` : ''}
+                      </div>
+                    ` : ''}
+                  </div>
+                </article>
+              </div>
+            `;
+          });
+
+          html += `</div>`;
+        }
+        html += `</div>`;
+      });
+
+      container.innerHTML = html;
+    }
+
+    function openItineraryModal(editId) {
+      const form = document.getElementById('form-itinerary');
+      form.reset();
+      if (editId) {
+        const item = appState.itinerary.find(i => i.id === editId);
+        if (!item) return;
+        document.getElementById('modal-itinerary-title').textContent = '編輯行程';
+        document.getElementById('itin-id').value = item.id;
+        document.getElementById('itin-day').value = item.day;
+        document.getElementById('itin-start').value = item.start;
+        document.getElementById('itin-end').value = item.end;
+        document.getElementById('itin-transport').value = item.transport;
+        document.getElementById('itin-transport-detail').value = item.transportDetail || '';
+        document.getElementById('itin-title').value = item.title;
+        document.getElementById('itin-address').value = item.address || '';
+        document.getElementById('itin-task').value = item.task || '';
+        document.getElementById('itin-contact').value = item.contact || '';
+        document.getElementById('itin-phone').value = item.phone || '';
+        document.getElementById('itin-email').value = item.email || '';
+        document.getElementById('itin-gifts').value = item.gifts || '';
+      } else {
+        document.getElementById('modal-itinerary-title').textContent = '新增行程';
+        document.getElementById('itin-id').value = '';
+        if (appState.selectedDay !== 'all') {
+          document.getElementById('itin-day').value = appState.selectedDay;
+        }
+      }
+      openModal('modal-itinerary');
+    }
+
+    function saveItineraryItem(e) {
+      e.preventDefault();
+      const id = document.getElementById('itin-id').value;
+      const record = {
+        id: id || 'itin-' + Date.now(),
+        day: document.getElementById('itin-day').value,
+        start: document.getElementById('itin-start').value.trim(),
+        end: document.getElementById('itin-end').value.trim(),
+        transport: document.getElementById('itin-transport').value,
+        transportDetail: document.getElementById('itin-transport-detail').value.trim(),
+        title: document.getElementById('itin-title').value.trim(),
+        address: document.getElementById('itin-address').value.trim(),
+        task: document.getElementById('itin-task').value.trim(),
+        contact: document.getElementById('itin-contact').value.trim(),
+        phone: document.getElementById('itin-phone').value.trim(),
+        email: document.getElementById('itin-email').value.trim(),
+        gifts: document.getElementById('itin-gifts').value.trim()
+      };
+
+      if (id) {
+        const idx = appState.itinerary.findIndex(i => i.id === id);
+        if (idx !== -1) appState.itinerary[idx] = record;
+        showToast('已更新行程內容');
+      } else {
+        appState.itinerary.push(record);
+        showToast('已新增行程');
+      }
+      saveState();
+      closeModal('modal-itinerary');
+      renderDaySummaryBanner();
+      renderItinerary();
+    }
+
+    function deleteItineraryItem(id) {
+      showConfirm('刪除行程', '確定要刪除這筆行程嗎？', () => {
+        appState.itinerary = appState.itinerary.filter(i => i.id !== id);
+        saveState();
+        renderDaySummaryBanner();
+        renderItinerary();
+        showToast('已刪除行程');
+      });
+    }
+
+    function moveItineraryItem(id, direction) {
+      const target = appState.itinerary.find(i => i.id === id);
+      if (!target) return;
+      const sameDayIndices = [];
+      appState.itinerary.forEach((item, idx) => {
+        if (item.day === target.day) sameDayIndices.push(idx);
+      });
+      const posInDay = sameDayIndices.findIndex(idx => appState.itinerary[idx].id === id);
+      const swapPos = posInDay + direction;
+      if (swapPos < 0 || swapPos >= sameDayIndices.length) return;
+
+      const idxA = sameDayIndices[posInDay];
+      const idxB = sameDayIndices[swapPos];
+      [appState.itinerary[idxA], appState.itinerary[idxB]] = [appState.itinerary[idxB], appState.itinerary[idxA]];
+
+      saveState();
+      renderItinerary();
+      showToast('已調整行程順序');
+    }
+
+    function confirmResetItinerary() {
+      showConfirm('重設為原始行程', '這將會把每日行程恢復為預設的 7 天考察行程，確定要重設嗎？', () => {
+        appState.itinerary = JSON.parse(JSON.stringify(DEFAULT_ITINERARY));
+        saveState();
+        renderDaySummaryBanner();
+        renderItinerary();
+        showToast('已恢復為原始 7 天行程');
+      });
+    }
+
+    /* ================================================================
+       7. 分頁二：自訂路線圖上傳與全螢幕縮放燈箱
+       ================================================================ */
+    function openUploadMapModal() {
+      document.getElementById('form-upload-map').reset();
+      openModal('modal-upload-map');
+    }
+
+    function handleUploadMap(e) {
+      e.preventDefault();
+      const title = document.getElementById('map-title').value.trim();
+      const region = document.getElementById('map-region').value.trim();
+      const file = document.getElementById('map-file').files[0];
+      if (!file) return;
+
+      const reader = new FileReader();
+      reader.onload = function(evt) {
+        const img = new Image();
+        img.onload = function() {
+          const maxDim = 1600;
+          let w = img.width, h = img.height;
+          if (w > maxDim || h > maxDim) {
+            if (w > h) { h = Math.round(h * maxDim / w); w = maxDim; }
+            else { w = Math.round(w * maxDim / h); h = maxDim; }
+          }
+          const canvas = document.createElement('canvas');
+          canvas.width = w;
+          canvas.height = h;
+          canvas.getContext('2d').drawImage(img, 0, 0, w, h);
+          const dataUrl = canvas.toDataURL('image/jpeg', 0.82);
+
+          appState.customMaps.unshift({ id: 'map-' + Date.now(), title, region, dataUrl });
+          saveState();
+          renderCustomMaps();
+          closeModal('modal-upload-map');
+          showToast('自訂路線圖已加入畫廊');
+        };
+        img.src = evt.target.result;
+      };
+      reader.readAsDataURL(file);
+    }
+
+    function renderCustomMaps() {
+      const gallery = document.getElementById('custom-maps-gallery');
+      document.getElementById('custom-maps-count').textContent = `${appState.customMaps.length} 張圖片`;
+
+      if (appState.customMaps.length === 0) {
+        gallery.innerHTML = `
+          <div class="col-span-full bg-[#FFFDF9] rounded-2xl border border-dashed border-[#D8D1C7] p-8 text-center">
+            <p class="text-sm font-bold text-[#6E6862] mb-1">尚未上傳自訂路線圖</p>
+            <p class="text-xs text-[#8A837C]">點擊上方「上傳自訂路線圖」，可將東京地鐵全圖、金澤公車或飯店出口截圖收藏於此。</p>
+          </div>
+        `;
+        return;
+      }
+
+      gallery.innerHTML = appState.customMaps.map(m => `
+        <div class="bg-[#FFFDF9] rounded-2xl border border-[#E6DFD5] shadow-soft overflow-hidden flex flex-col">
+          <div onclick="openLightbox('img:${m.id}', '${esc(m.title)}')" class="h-44 bg-[#FAF7F2] overflow-hidden cursor-zoom-in relative group">
+            <img src="${m.dataUrl}" alt="${esc(m.title)}" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
+            <span class="absolute bottom-2 right-2 px-2.5 py-1 rounded-lg bg-[#363330]/75 text-white text-[11px] font-bold">點擊放大 🔍</span>
+          </div>
+          <div class="p-3.5 flex items-center justify-between gap-2">
+            <div class="min-w-0">
+              <span class="inline-block px-2 py-0.5 rounded-full text-[11px] font-bold bg-[#ECF4F4] text-[#3F676A] mb-1">${esc(m.region)}</span>
+              <h4 class="font-bold text-sm text-[#363330] truncate">${esc(m.title)}</h4>
+            </div>
+            <button onclick="deleteCustomMap('${m.id}')" class="shrink-0 px-2.5 py-1.5 rounded-lg border border-[#E6DFD5] text-xs font-bold text-[#8A5158] hover:bg-[#F8EFF0]">刪除</button>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function deleteCustomMap(id) {
+      showConfirm('刪除路線圖', '確定要從畫廊移除這張圖片嗎？', () => {
+        appState.customMaps = appState.customMaps.filter(m => m.id !== id);
+        saveState();
+        renderCustomMaps();
+        showToast('已刪除自訂圖片');
+      });
+    }
+
+    /* ---- 全螢幕縮放燈箱引擎 ---- */
+    let lbScale = 1, lbX = 0, lbY = 0;
+    let isDragging = false, dragStartX = 0, dragStartY = 0;
+    let pinchStartDist = 0, pinchStartScale = 1;
+
+    function updateLightboxTransform() {
+      document.getElementById('lightbox-content').style.transform = `translate(${lbX}px, ${lbY}px) scale(${lbScale})`;
+      document.getElementById('lightbox-zoom-label').textContent = Math.round(lbScale * 100) + '%';
+    }
+
+    function openLightbox(sourceKey, title) {
+      const lb = document.getElementById('lightbox');
+      const content = document.getElementById('lightbox-content');
+      document.getElementById('lightbox-title').textContent = title;
+      content.innerHTML = '';
+
+      if (sourceKey === 'svg-tokyo' || sourceKey === 'svg-hokuriku') {
+        const clone = document.getElementById(sourceKey).cloneNode(true);
+        clone.removeAttribute('id');
+        clone.setAttribute('class', 'w-[92vw] max-w-4xl h-auto rounded-xl bg-[#FFFDF9] shadow-2xl');
+        content.appendChild(clone);
+      } else if (sourceKey.startsWith('img:')) {
+        const found = appState.customMaps.find(m => m.id === sourceKey.replace('img:', ''));
+        if (!found) return;
+        const img = document.createElement('img');
+        img.src = found.dataUrl;
+        img.alt = title;
+        img.className = 'max-w-[92vw] max-h-[80vh] rounded-xl shadow-2xl pointer-events-none';
+        content.appendChild(img);
+      }
+
+      resetLightboxZoom();
+      lb.classList.remove('hidden');
+      lb.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      const lb = document.getElementById('lightbox');
+      lb.classList.add('hidden');
+      lb.classList.remove('flex');
+      document.body.style.overflow = '';
+    }
+
+    function zoomLightbox(delta) {
+      lbScale = Math.min(4.5, Math.max(0.6, +(lbScale + delta).toFixed(2)));
+      updateLightboxTransform();
+    }
+
+    function resetLightboxZoom() {
+      lbScale = 1; lbX = 0; lbY = 0;
+      updateLightboxTransform();
+    }
+
+    (function initLightboxEvents() {
+      const stage = document.getElementById('lightbox-stage');
+      stage.addEventListener('wheel', (e) => {
+        e.preventDefault();
+        zoomLightbox(e.deltaY < 0 ? 0.2 : -0.2);
+      }, { passive: false });
+
+      stage.addEventListener('mousedown', (e) => {
+        isDragging = true;
+        dragStartX = e.clientX - lbX;
+        dragStartY = e.clientY - lbY;
+      });
+      window.addEventListener('mousemove', (e) => {
+        if (!isDragging) return;
+        lbX = e.clientX - dragStartX;
+        lbY = e.clientY - dragStartY;
+        updateLightboxTransform();
+      });
+      window.addEventListener('mouseup', () => { isDragging = false; });
+
+      stage.addEventListener('touchstart', (e) => {
+        if (e.touches.length === 1) {
+          isDragging = true;
+          dragStartX = e.touches[0].clientX - lbX;
+          dragStartY = e.touches[0].clientY - lbY;
+        } else if (e.touches.length === 2) {
+          isDragging = false;
+          pinchStartDist = Math.hypot(
+            e.touches[0].clientX - e.touches[1].clientX,
+            e.touches[0].clientY - e.touches[1].clientY
+          );
+          pinchStartScale = lbScale;
+        }
+      }, { passive: false });
+
+      stage.addEventListener('touchmove', (e) => {
+        e.preventDefault();
+        if (e.touches.length === 1 && isDragging) {
+          lbX = e.touches[0].clientX - dragStartX;
+          lbY = e.touches[0].clientY - dragStartY;
+          updateLightboxTransform();
+        } else if (e.touches.length === 2 && pinchStartDist > 0) {
+          const dist = Math.hypot(
+            e.touches[0].clientX - e.touches[1].clientX,
+            e.touches[0].clientY - e.touches[1].clientY
+          );
+          lbScale = Math.min(4.5, Math.max(0.6, pinchStartScale * (dist / pinchStartDist)));
+          updateLightboxTransform();
+        }
+      }, { passive: false });
+
+      stage.addEventListener('touchend', () => { isDragging = false; pinchStartDist = 0; });
+    })();
+
+    /* ================================================================
+       8. 分頁三：景點與美食（雙重彩色篩選）
+       ================================================================ */
+    const SPOT_CATEGORIES = [
+      { id: '全部', theme: { main: '#363330', soft: '#EFEAE1', dark: '#363330', border: '#D8D1C7' } },
+      { id: '景點', theme: MORANDI_THEMES.gold },
+      { id: '餐廳', theme: MORANDI_THEMES.clay },
+      { id: '逛街', theme: MORANDI_THEMES.purple },
+      { id: '素食', theme: MORANDI_THEMES.sage },
+      { id: '點心', theme: MORANDI_THEMES.rose }
+    ];
+
+    const SPOT_DAY_GROUPS = [
+      { id: 'all',      label: '全部區域',                     theme: MORANDI_THEMES.teal },
+      { id: 'yotsuya',  label: '四谷・平河町（飯店／防災士）', theme: MORANDI_THEMES.blue },
+      { id: 'honancho', label: '方南町（神田川調節池）',       theme: MORANDI_THEMES.sage },
+      { id: 'otemachi', label: '大手町・東京站（消防廳）',     theme: MORANDI_THEMES.rose },
+      { id: 'oshiage',  label: '押上・錦糸町（本所防災館）',   theme: MORANDI_THEMES.purple },
+      { id: 'akasaka',  label: '赤坂（晚宴周邊）',             theme: MORANDI_THEMES.rose },
+      { id: 'kanazawa', label: '金澤（石川縣廳周邊）',         theme: MORANDI_THEMES.clay },
+      { id: 'nanao',    label: '七尾・能登（震災勘查）',       theme: MORANDI_THEMES.gold },
+      { id: 'ueno',     label: '上野（最後一晚）',             theme: MORANDI_THEMES.teal }
+    ];
+
+    function renderSpotFilters() {
+      document.getElementById('spot-category-filters').innerHTML = SPOT_CATEGORIES.map(c => {
+        const active = appState.spotCategory === c.id;
+        const st = active
+          ? `background:${c.theme.main};color:#FFFFFF;border-color:${c.theme.main};`
+          : `background:${c.theme.soft};color:${c.theme.dark};border-color:${c.theme.border};`;
+        return `<button onclick="setSpotCategory('${c.id}')" style="${st}" class="px-3.5 py-1.5 rounded-full text-xs font-bold border transition active:scale-95">${c.id}</button>`;
+      }).join('');
+
+      document.getElementById('spot-day-filters').innerHTML = SPOT_DAY_GROUPS.map(g => {
+        const active = appState.spotDayGroup === g.id;
+        const st = active
+          ? `background:${g.theme.main};color:#FFFFFF;border-color:${g.theme.main};`
+          : `background:#FAF7F2;color:#6E6862;border-color:#E6DFD5;`;
+        return `<button onclick="setSpotDayGroup('${g.id}')" style="${st}" class="shrink-0 px-3.5 py-1.5 rounded-xl text-xs font-bold border transition active:scale-95">${g.label}</button>`;
+      }).join('');
+    }
+
+    function setSpotCategory(cat) {
+      appState.spotCategory = cat;
+      renderSpotFilters();
+      renderSpots();
+    }
+
+    function setSpotDayGroup(group) {
+      appState.spotDayGroup = group;
+      renderSpotFilters();
+      renderSpots();
+    }
+
+    function renderSpots() {
+      const grid = document.getElementById('spots-grid');
+      const filtered = appState.spots.filter(s => {
+        const matchCat = appState.spotCategory === '全部' || s.category === appState.spotCategory;
+        const matchDay = appState.spotDayGroup === 'all' || s.dayGroup === appState.spotDayGroup;
+        return matchCat && matchDay;
+      });
+
+      document.getElementById('spots-result-count').textContent = `共顯示 ${filtered.length} 個推薦地點`;
+
+      if (filtered.length === 0) {
+        grid.innerHTML = `
+          <div class="col-span-full bg-[#FFFDF9] rounded-2xl border border-dashed border-[#D8D1C7] p-8 text-center text-sm text-[#6E6862]">
+            此篩選條件下暫無地點，試試切換其他分類或點擊上方「新增地點」。
+          </div>
+        `;
+        return;
+      }
+
+      grid.innerHTML = filtered.map(s => {
+        const catMeta = SPOT_CATEGORIES.find(c => c.id === s.category) || SPOT_CATEGORIES[0];
+        const t = catMeta.theme;
+        const groupLabel = (SPOT_DAY_GROUPS.find(g => g.id === s.dayGroup) || {}).label || '';
+        const mapHref = getMapsUrl(`${s.name} ${s.area}`, s.mapUrl);
+
+        return `
+          <article class="bg-[#FFFDF9] rounded-2xl border border-[#E6DFD5] p-4 shadow-soft flex flex-col justify-between hover:shadow-md transition" style="border-top: 4px solid ${t.main};">
+            <div>
+              <div class="flex items-start justify-between gap-2 mb-2">
+                <div class="flex flex-wrap items-center gap-1.5">
+                  <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold text-white" style="background:${t.main}">${esc(s.category)}</span>
+                  <span class="px-2 py-0.5 rounded-full text-[11px] font-bold border" style="background:${t.soft};color:${t.dark};border-color:${t.border};">📍 ${esc(s.area)}</span>
+                </div>
+                ${s.isCustom ? `<button onclick="deleteSpot('${s.id}')" class="text-[11px] font-bold text-[#8A5158] hover:underline shrink-0">刪除</button>` : ''}
+              </div>
+
+              <h4 class="font-bold text-base text-[#363330] leading-snug">${esc(s.name)}</h4>
+              <div class="mt-1.5 flex flex-wrap gap-1.5">
+                <span class="inline-block px-2 py-0.5 rounded-md text-[11px] font-bold bg-[#FAF7F2] text-[#57524D] border border-[#E6DFD5]">${esc(s.tag)}</span>
+                <span class="inline-block px-2 py-0.5 rounded-md text-[11px] text-[#857E77] bg-[#FAF7F2]">${esc(groupLabel.split('（')[0])}</span>
+              </div>
+
+              <p class="mt-2.5 text-xs sm:text-sm text-[#57524D] leading-relaxed">${esc(s.desc)}</p>
+            </div>
+
+            <div class="mt-4 pt-3 border-t border-[#EFEAE1]">
+              <a href="${mapHref}" target="_blank" rel="noopener" class="block w-full text-center px-3.5 py-2 rounded-xl text-xs font-bold border transition hover:opacity-90" style="background:${t.soft};color:${t.dark};border-color:${t.border};">
+                開啟 Google Maps 導航 ↗
+              </a>
+            </div>
+          </article>
+        `;
+      }).join('');
+    }
+
+    function openSpotModal() {
+      document.getElementById('form-spot').reset();
+      openModal('modal-spot');
+    }
+
+    function saveSpotItem(e) {
+      e.preventDefault();
+      appState.spots.unshift({
+        id: 'spot-' + Date.now(),
+        name: document.getElementById('spot-name').value.trim(),
+        category: document.getElementById('spot-category').value,
+        dayGroup: document.getElementById('spot-day-group').value,
+        area: document.getElementById('spot-area').value.trim(),
+        tag: document.getElementById('spot-tag').value.trim(),
+        desc: document.getElementById('spot-desc').value.trim(),
+        mapUrl: document.getElementById('spot-map-url').value.trim(),
+        isCustom: true
+      });
+      saveState();
+      closeModal('modal-spot');
+      renderSpots();
+      showToast('已新增至景點與美食清單');
+    }
+
+    function deleteSpot(id) {
+      showConfirm('刪除地點', '確定要移除這筆自訂地點嗎？', () => {
+        appState.spots = appState.spots.filter(s => s.id !== id);
+        saveState();
+        renderSpots();
+        showToast('已移除地點');
+      });
+    }
+
+    /* ================================================================
+       9. 分頁四：團員名冊（獨立莫蘭迪色卡片）、送禮清點與 JSON 同步
+       ================================================================ */
+    const THEME_KEYS = ['blue', 'sage', 'rose', 'purple', 'clay', 'gold', 'teal'];
+
+    function renderTeam() {
+      const list = document.getElementById('team-list');
+      if (appState.members.length === 0) {
+        list.innerHTML = `
+          <div class="col-span-full bg-[#FFFDF9] rounded-2xl border border-dashed border-[#D8D1C7] p-6 text-center text-sm text-[#6E6862]">
+            尚未建立團員資料，點擊上方「新增團員」即可建立。
+          </div>
+        `;
+        return;
+      }
+
+      list.innerHTML = appState.members.map((m, idx) => {
+        const themeKey = m.theme && MORANDI_THEMES[m.theme] ? m.theme : THEME_KEYS[idx % THEME_KEYS.length];
+        const t = MORANDI_THEMES[themeKey];
+        const initial = m.name ? m.name.trim().charAt(0) : '團';
+
+        return `
+          <div class="rounded-2xl border p-4 sm:p-5 shadow-book flex flex-col justify-between transition hover:shadow-md" style="background:#FFFDF9;border-color:${t.border};border-top:5px solid ${t.main};">
+            <div>
+              <div class="flex items-start justify-between gap-2 mb-3.5">
+                <div class="flex items-center gap-3 min-w-0">
+                  <div class="w-12 h-12 rounded-2xl text-white font-bold text-lg flex items-center justify-center shrink-0 shadow-xs" style="background:${t.main}">
+                    ${esc(initial)}
+                  </div>
+                  <div class="min-w-0">
+                    <div class="flex flex-wrap items-center gap-1.5">
+                      <h4 class="font-bold text-base sm:text-lg text-[#363330]">${esc(m.name)}</h4>
+                      <span class="px-2 py-0.5 rounded-full text-[11px] font-bold text-white" style="background:${t.main}">${esc(m.badge || '團員')}</span>
+                    </div>
+                    ${m.enName ? `<div class="text-xs font-medium text-[#6E6862] mt-0.5">${esc(m.enName)}</div>` : ''}
+                    <div class="text-xs font-bold mt-1" style="color:${t.dark}">${esc(m.role)}</div>
+                  </div>
+                </div>
+                <div class="flex items-center gap-1 shrink-0">
+                  <button onclick="openMemberModal('${m.id}')" class="px-2.5 py-1.5 rounded-lg text-xs font-bold border transition" style="background:${t.soft};color:${t.dark};border-color:${t.border};">編輯</button>
+                  <button onclick="deleteMember('${m.id}')" class="px-2 py-1.5 rounded-lg border border-[#E6DFD5] text-xs font-bold text-[#8A5158] hover:bg-[#F8EFF0]">刪除</button>
+                </div>
+              </div>
+
+              <div class="space-y-1.5 text-xs text-[#4A4642] p-3 rounded-xl border" style="background:${t.soft};border-color:${t.border};">
+                <div class="flex items-center gap-1.5">
+                  <span class="font-bold shrink-0" style="color:${t.dark}">聯絡電話：</span>
+                  ${m.phone ? `<a href="tel:${esc(m.phone)}" class="underline font-bold" style="color:${t.dark}">${esc(m.phone)}</a>` : '<span class="text-[#8A837C]">尚未填寫</span>'}
+                </div>
+                <div class="flex items-center gap-1.5">
+                  <span class="font-bold shrink-0" style="color:${t.dark}">住宿房號：</span>
+                  <span>${esc(m.room || '尚未填寫')}</span>
+                </div>
+                <div class="flex items-start gap-1.5">
+                  <span class="font-bold shrink-0" style="color:${t.dark}">個人備註：</span>
+                  <span>${esc(m.diet || '無特別備註')}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function openMemberModal(editId) {
+      const form = document.getElementById('form-member');
+      form.reset();
+      if (editId) {
+        const m = appState.members.find(x => x.id === editId);
+        if (!m) return;
+        document.getElementById('modal-member-title').textContent = '編輯團員資訊';
+        document.getElementById('member-id').value = m.id;
+        document.getElementById('member-name').value = m.name;
+        document.getElementById('member-en').value = m.enName || '';
+        document.getElementById('member-badge').value = m.badge || '團員';
+        document.getElementById('member-theme').value = m.theme || 'blue';
+        document.getElementById('member-role').value = m.role;
+        document.getElementById('member-phone').value = m.phone || '';
+        document.getElementById('member-room').value = m.room || '';
+        document.getElementById('member-diet').value = m.diet || '';
+      } else {
+        document.getElementById('modal-member-title').textContent = '新增團員資訊';
+        document.getElementById('member-id').value = '';
+        document.getElementById('member-theme').value = THEME_KEYS[appState.members.length % THEME_KEYS.length];
+      }
+      openModal('modal-member');
+    }
+
+    function saveMemberItem(e) {
+      e.preventDefault();
+      const id = document.getElementById('member-id').value;
+      const record = {
+        id: id || 'mem-' + Date.now(),
+        name: document.getElementById('member-name').value.trim(),
+        enName: document.getElementById('member-en').value.trim(),
+        badge: document.getElementById('member-badge').value.trim(),
+        theme: document.getElementById('member-theme').value,
+        role: document.getElementById('member-role').value.trim(),
+        phone: document.getElementById('member-phone').value.trim(),
+        room: document.getElementById('member-room').value.trim(),
+        diet: document.getElementById('member-diet').value.trim()
+      };
+      if (id) {
+        const idx = appState.members.findIndex(m => m.id === id);
+        if (idx !== -1) appState.members[idx] = record;
+        showToast('已更新團員資訊');
+      } else {
+        appState.members.push(record);
+        showToast('已新增團員');
+      }
+      saveState();
+      closeModal('modal-member');
+      renderTeam();
+    }
+
+    function deleteMember(id) {
+      showConfirm('刪除團員', '確定要移除這位團員的資料嗎？', () => {
+        appState.members = appState.members.filter(m => m.id !== id);
+        saveState();
+        renderTeam();
+        showToast('已移除團員');
+      });
+    }
+
+    /* ---- 送禮總數量清點清單 ---- */
+    function renderGiftChecklist() {
+      const container = document.getElementById('gift-checklist');
+      const doneCount = appState.gifts.filter(g => g.checked).length;
+      document.getElementById('gift-progress').textContent = `${doneCount} / ${appState.gifts.length} 已打包`;
+
+      container.innerHTML = appState.gifts.map(g => `
+        <label class="flex items-center justify-between gap-3 p-3 rounded-xl border cursor-pointer transition ${
+          g.checked
+            ? 'bg-[#EFF4F0] border-[#789482]/40'
+            : 'bg-[#FAF2EC]/65 border-[#C68B6B]/30 hover:bg-[#FAF2EC]'
+        }">
+          <div class="flex items-center gap-3">
+            <input type="checkbox" ${g.checked ? 'checked' : ''} onchange="toggleGift('${g.id}')" class="w-4 h-4 accent-[#789482] rounded cursor-pointer" />
+            <span class="text-sm font-bold ${g.checked ? 'line-through text-[#6E6862]' : 'text-[#363330]'}">${esc(g.name)}</span>
+          </div>
+          <span class="text-xs font-bold px-2.5 py-1 rounded-lg ${
+            g.checked
+              ? 'bg-[#789482]/20 text-[#4B6755]'
+              : 'bg-[#FFFDF9] text-[#8E593D] border border-[#C68B6B]/30'
+          }">${esc(g.qty)}</span>
+        </label>
+      `).join('');
+    }
+
+    function toggleGift(id) {
+      const item = appState.gifts.find(g => g.id === id);
+      if (item) {
+        item.checked = !item.checked;
+        saveState();
+        renderGiftChecklist();
+      }
+    }
+
+    /* ---- 旅伴 JSON 分享與匯入 ---- */
+    function exportDataJSON() {
+      const jsonStr = JSON.stringify({
+        itinerary: appState.itinerary,
+        spots: appState.spots,
+        members: appState.members,
+        gifts: appState.gifts
+      }, null, 2);
+
+      const ta = document.createElement('textarea');
+      ta.value = jsonStr;
+      ta.style.position = 'fixed';
+      ta.style.left = '-9999px';
+      document.body.appendChild(ta);
+      ta.select();
+      try {
+        document.execCommand('copy');
+        showToast('已複製 JSON！可直接貼到 LINE 群組給旅伴匯入');
+      } catch (err) {
+        showToast('複製失敗，請手動開啟匯入視窗');
+      }
+      document.body.removeChild(ta);
+    }
+
+    function openImportModal() {
+      document.getElementById('import-json-text').value = '';
+      openModal('modal-import');
+    }
+
+    function applyImportData() {
+      const raw = document.getElementById('import-json-text').value.trim();
+      if (!raw) { showToast('請先貼上 JSON 內容'); return; }
+      try {
+        const parsed = JSON.parse(raw);
+        if (Array.isArray(parsed.itinerary)) appState.itinerary = parsed.itinerary;
+        if (Array.isArray(parsed.spots))     appState.spots = parsed.spots;
+        if (Array.isArray(parsed.members))   appState.members = parsed.members;
+        if (Array.isArray(parsed.gifts))     appState.gifts = parsed.gifts;
+        saveState();
+        renderAll();
+        closeModal('modal-import');
+        showToast('已成功同步旅伴的行程資料！');
+      } catch (e) {
+        showToast('JSON 格式不正確，請確認內容是否完整');
+      }
+    }
+
+    /* ================================================================
+       10. 初始化
+       ================================================================ */
+    function renderAll() {
+      renderDayFilters();
+      renderDaySummaryBanner();
+      renderItinerary();
+      renderCustomMaps();
+      renderSpotFilters();
+      renderSpots();
+      renderTeam();
+      renderGiftChecklist();
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      loadState();
+      renderAll();
+      switchTab('itinerary');
+    });
+  </script>
+</body>
+</html>
